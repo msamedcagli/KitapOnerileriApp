@@ -1,0 +1,366 @@
+[
+  {
+    "id": 1,
+    "title": "Kürk Mantolu Madonna",
+    "author": "Sabahattin Ali",
+    "category": "Modern Roman",
+    "image": "/bookimages/1-kurk-mantolu-madonna.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Gurur ve Önyargı",
+    "author": "Jane Austen",
+    "category": "Klasik Roman",
+    "image": "/bookimages/2-gurur-ve-onyargi.jpg"
+  },
+  {
+    "id": 3,
+    "title": "1984",
+    "author": "George Orwell",
+    "category": "Distopya",
+    "image": "/bookimages/3-1984.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Kuyucaklı Yusuf",
+    "author": "Sabahattin Ali",
+    "category": "Modern Roman",
+    "image": "/bookimages/4-kuyucakli-yusuf.jpg"
+  },
+  {
+    "id": 5,
+    "title": "İnsan Neyle Yaşar?",
+    "author": "Lev Nikolayeviç Tolstoy",
+    "category": "Felsefe",
+    "image": "/bookimages/5-insan-neyle-yasar.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Dedemin Bakkalı",
+    "author": "Şermin Yaşar",
+    "category": "Çocuk Kitapları",
+    "image": "/bookimages/6-dedemin-bakkali.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Otomatik Portakal",
+    "author": "Anthony Burgess",
+    "category": "Distopya",
+    "image": "/bookimages/7-otomatik-portakal.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Şeker Portakalı",
+    "author": "Jose Mauro de Vasconcelos",
+    "category": "Çocuk Kitapları",
+    "image": "/bookimages/8-seker-portakali.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Sineklerin Tanrısı",
+    "author": "Sir William Gerald Golding",
+    "category": "Distopya",
+    "image": "/bookimages/9-sineklerin-tanrisi.jpg"
+  },
+  {
+    "id": 10,
+    "title": "İçimizdeki Şeytan",
+    "author": "Sabahattin Ali",
+    "category": "Modern Roman",
+    "image": "/bookimages/10-icimizdeki-seytan.jpg"
+  },
+  {
+    "id": 11,
+    "title": "İnce Memed - 1",
+    "author": "Yaşar Kemal",
+    "category": "Modern Roman",
+    "image": "/bookimages/11-ince-memed-1.jpg"
+  },
+  {
+    "id": 12,
+    "title": "Savaş Sanatı",
+    "author": "Sun Tzu",
+    "category": "Felsefe",
+    "image": "/bookimages/12-savas-sanati.jpg"
+  },
+  {
+    "id": 13,
+    "title": "Puslu Kıtalar Atlası",
+    "author": "İhsan Oktay Anar",
+    "category": "Fantastik",
+    "image": "/bookimages/13-puslu-kitalar-atlasi.jpg"
+  },
+  {
+    "id": 14,
+    "title": "Simyacı",
+    "author": "Paulo Coelho",
+    "category": "Modern Roman",
+    "image": "/bookimages/14-simyaci.jpg"
+  },
+  {
+    "id": 15,
+    "title": "Küçük Prens",
+    "author": "Antoine de Saint-Exupery",
+    "category": "Çocuk Kitapları",
+    "image": "/bookimages/15-kucuk-prens.jpg"
+  },
+  {
+    "id": 16,
+    "title": "Martı Jonathan Livingston",
+    "author": "Richard Bach",
+    "category": "Kişisel Gelişim",
+    "image": "/bookimages/16-marti-jonathan-livingston-dorduncu-bolum-ilavesiyle.jpg"
+  },
+  {
+    "id": 17,
+    "title": "Uçurtma Avcısı",
+    "author": "Khaled Hosseini",
+    "category": "Modern Roman",
+    "image": "/bookimages/17-ucurtma-avcisi.jpg"
+  },
+  {
+    "id": 18,
+    "title": "Ikigai",
+    "author": "",
+    "category": "Kişisel Gelişim",
+    "image": "/bookimages/18-ikigai.jpg"
+  },
+  {
+    "id": 19,
+    "title": "Devlet",
+    "author": "Platon (Eflatun)",
+    "category": "Felsefe",
+    "image": "/bookimages/19-devlet.jpg"
+  },
+  {
+    "id": 20,
+    "title": "Olağanüstü Bir Gece",
+    "author": "Stefan Zweig",
+    "category": "Modern Roman",
+    "image": "/bookimages/20-olaganustu-bir-gece.jpg"
+  },
+  {
+    "id": 21,
+    "title": "Çavdar Tarlasında Çocuklar",
+    "author": "Jerome David Salinger",
+    "category": "Gençlik Romanı",
+    "image": "/bookimages/21-cavdar-tarlasinda-cocuklar.jpg"
+  },
+  {
+    "id": 22,
+    "title": "Fahrenheit 451",
+    "author": "Ray Bradbury",
+    "category": "Distopya",
+    "image": "/bookimages/22-fahrenheit.jpg"
+  },
+  {
+    "id": 23,
+    "title": "Yüzyıllık Yalnızlık",
+    "author": "Gabriel García Márquez",
+    "category": "Modern Roman",
+    "image": "/bookimages/23-yuzyillik-yalnizlik.jpg"
+  },
+  {
+    "id": 24,
+    "title": "Bir Ömür Nasıl Yaşanır?",
+    "author": "İlber Ortaylı",
+    "category": "Biyografi / Anı",
+    "image": "/bookimages/24-bir-omur-nasil-yasanir.jpg"
+  },
+  {
+    "id": 25,
+    "title": "Kırmızı Pazartesi",
+    "author": "Gabriel García Márquez",
+    "category": "Modern Roman",
+    "image": "/bookimages/25-kirmizi-pazartesi.jpg"
+  },
+  {
+    "id": 26,
+    "title": "Karamazov Kardeşler",
+    "author": "Fyodor Mihayloviç Dostoyevski",
+    "category": "Klasik Roman",
+    "image": "/bookimages/26-karamazov-kardesler.jpg"
+  },
+  {
+    "id": 27,
+    "title": "Hayvan Çiftliği",
+    "author": "George Orwell",
+    "category": "Distopya",
+    "image": "/bookimages/27-hayvan-ciftligi.jpg"
+  },
+  {
+    "id": 28,
+    "title": "Değirmen",
+    "author": "Sabahattin Ali",
+    "category": "Modern Roman",
+    "image": "/bookimages/28-degirmen.jpg"
+  },
+  {
+    "id": 29,
+    "title": "Pembe Fili Düşünme",
+    "author": "Zeynep Selvili Çarmıklı",
+    "category": "Kişisel Gelişim",
+    "image": "/bookimages/29-pembe-fili-dusunme.jpg"
+  },
+  {
+    "id": 30,
+    "title": "Beyaz Gemi",
+    "author": "Cengiz Aytmatov",
+    "category": "Modern Roman",
+    "image": "/bookimages/30-beyaz-gemi.jpg"
+  },
+  {
+    "id": 31,
+    "title": "Charlie’nin Çikolata Fabrikası",
+    "author": "Roald Dahl",
+    "category": "Çocuk Kitapları",
+    "image": "/bookimages/31-charlienin-cikolata-fabrikasi.jpg"
+  },
+  {
+    "id": 32,
+    "title": "Dirilt Kalbini",
+    "author": "Nouman Ali Khan",
+    "category": "Kişisel Gelişim",
+    "image": "/bookimages/32-dirilt-kalbini.jpg"
+  },
+  {
+    "id": 33,
+    "title": "Sırça Köşk",
+    "author": "Sabahattin Ali",
+    "category": "Modern Roman",
+    "image": "/bookimages/33-sirca-kosk.jpg"
+  },
+  {
+    "id": 34,
+    "title": "Momo",
+    "author": "Michael Ende",
+    "category": "Fantastik",
+    "image": "/bookimages/34-momo.jpg"
+  },
+  {
+    "id": 35,
+    "title": "Göçüp Gidenler Koleksiyoncusu",
+    "author": "Şermin Yaşar",
+    "category": "Modern Roman",
+    "image": "/bookimages/35-gocup-gidenler-koleksiyoncusu.jpg"
+  },
+  {
+    "id": 36,
+    "title": "Tutunamayanlar",
+    "author": "Oğuz Atay",
+    "category": "Modern Roman",
+    "image": "/bookimages/36-tutunamayanlar.jpg"
+  },
+  {
+    "id": 37,
+    "title": "Od",
+    "author": "İskender Pala",
+    "category": "Tarihî Roman",
+    "image": "/bookimages/37-od.jpg"
+  },
+  {
+    "id": 38,
+    "title": "Ustalık Gerektiren Kafaya Takmama Sanatı",
+    "author": "Mark Manson",
+    "category": "Kişisel Gelişim",
+    "image": "/bookimages/38-ustalik-gerektiren-kafaya-takmama-sanati.jpg"
+  },
+  {
+    "id": 39,
+    "title": "Bağırmayan Anneler",
+    "author": "Hatice Kübra Tongar",
+    "category": "Eğitim / Ebeveynlik",
+    "image": "/bookimages/39-bagirmayan-anneler.jpg"
+  },
+  {
+    "id": 40,
+    "title": "Diriliş Neslinin Amentüsü",
+    "author": "Sezai Karakoç",
+    "category": "Felsefe",
+    "image": "/bookimages/40-dirilis-neslinin-amentusu.jpg"
+  },
+  {
+    "id": 41,
+    "title": "Beyaz Zambaklar Ülkesinde",
+    "author": "Grigori Spiridonoviç Petrov",
+    "category": "Tarihî Roman",
+    "image": "/bookimages/41-beyaz-zambaklar-ulkesinde.jpg"
+  },
+  {
+    "id": 42,
+    "title": "Şah ve Sultan",
+    "author": "İskender Pala",
+    "category": "Tarihî Roman",
+    "image": "/bookimages/42-sah-ve-sultan.jpg"
+  },
+  {
+    "id": 43,
+    "title": "Her Şey Seninle Başlar",
+    "author": "Mümin Sekman",
+    "category": "Kişisel Gelişim",
+    "image": "/bookimages/43-her-sey-seninle-baslar.jpg"
+  },
+  {
+    "id": 44,
+    "title": "Dürümler Karışık - Kral Şakir 6",
+    "author": "Varol Yaşaroğlu",
+    "category": "Çocuk Kitapları",
+    "image": "/bookimages/44-durumler-karisik-kral-sakir.jpg"
+  },
+  {
+    "id": 45,
+    "title": "Osmanlı İmparatorluğu Klasik Çağ 1300 - 1600",
+    "author": "Halil İnalcık",
+    "category": "Tarih",
+    "image": "/bookimages/45-osmanli-imparatorlugu-klasik-cag-1300.jpg"
+  },
+  {
+    "id": 46,
+    "title": "Güneşi Uyandıralım",
+    "author": "Jose Mauro de Vasconcelos",
+    "category": "Çocuk Kitapları",
+    "image": "/bookimages/46-gunesi-uyandiralim.jpg"
+  },
+  {
+    "id": 47,
+    "title": "21. Yüzyıl İçin 21 Ders",
+    "author": "Yuval Noah Harari",
+    "category": "Felsefe / Sosyoloji",
+    "image": "/bookimages/47-21-yuzyil-icin-21-ders.jpg"
+  },
+  {
+    "id": 48,
+    "title": "Eğitim: Bir Kitle İmha Silahı",
+    "author": "John Taylor Gatto",
+    "category": "Eğitim",
+    "image": "/bookimages/48-egitim-bir-kitle-imha-silahi.jpg"
+  },
+  {
+    "id": 49,
+    "title": "Leyla ile Mecnun",
+    "author": "Burak Aksak",
+    "category": "Modern Roman",
+    "image": "/bookimages/49-leyla-ile-mecnun.jpg"
+  },
+  {
+    "id": 50,
+    "title": "Hayat Cesurlara Torpil Geçer Özel Baskı",
+    "author": "Bircan Yıldırım",
+    "category": "Kişisel Gelişim",
+    "image": "/bookimages/50-hayat-cesurlara-torpil-gecer.jpg"
+  },
+  {
+    "id": 51,
+    "title": "Gazi Mustafa Kemal Atatürk",
+    "author": "İlber Ortaylı",
+    "category": "Biyografi / Anı",
+    "image": "/bookimages/51-gazi-mustafa-kemal-ataturk.jpg"
+  },
+  {
+    "id": 52,
+    "title": "Saklı Seçilmişler",
+    "author": "Soner Yalçın",
+    "category": "Araştırma / İnceleme",
+    "image": "/bookimages/52-sakli-secilmisler.jpg"
+  }
+]
