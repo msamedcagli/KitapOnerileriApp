@@ -33,7 +33,7 @@ class BookAdapter(
             } else book.image
 
             Glide.with(itemView.context)
-                .load("http://172.20.10.2:3000$imagePath")
+                .load("http://13.48.248.57$imagePath")
                 .placeholder(R.drawable.ic_launcher_foreground)
                 .into(bookImage)
 
