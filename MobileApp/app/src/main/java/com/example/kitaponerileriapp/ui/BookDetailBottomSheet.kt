@@ -42,7 +42,7 @@ class BookDetailBottomSheet : BottomSheetDialogFragment() {
             } else book.image
 
             val imageUrl = if (!book.image.isNullOrEmpty()) {
-                "http://172.20.10.2:3000$imagePath"
+                "http://13.48.248.57$imagePath"
             } else null
 
             Glide.with(requireContext())
