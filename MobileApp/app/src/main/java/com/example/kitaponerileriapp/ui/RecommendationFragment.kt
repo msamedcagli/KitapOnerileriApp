@@ -14,6 +14,9 @@ import com.example.kitaponerileriapp.viewmodel.RecommendationViewModel
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.flow.collectLatest
+import kotlinx.coroutines.flow.drop
+
 
 class RecommendationFragment : BottomSheetDialogFragment() {
 
@@ -62,23 +65,26 @@ class RecommendationFragment : BottomSheetDialogFragment() {
         }
 
         lifecycleScope.launch {
-            viewModel.filteredBooks.collectLatest { books ->
-                if (books.isNotEmpty()) {
-                    val firstBook = books.first()
+            viewModel.filteredBooks
+                .drop(1) // ilk değeri atla
+                .collectLatest { books ->
+                    if (books.isNotEmpty()) {
+                        val firstBook = books.first()
 
-                    val bottomSheet = BookDetailBottomSheet().apply {
-                        arguments = Bundle().apply {
-                            putParcelable("book", firstBook)
+                        val bottomSheet = BookDetailBottomSheet().apply {
+                            arguments = Bundle().apply {
+                                putParcelable("book", firstBook)
+                            }
                         }
-                    }
 
-                    bottomSheet.show(parentFragmentManager, "BookDetailBottomSheet")
-                    viewModel.clearFilteredBooks()
-                } else {
-                    Toast.makeText(requireContext(), "Bu kategoriye uygun kitap bulunamadı.", Toast.LENGTH_SHORT).show()
+                        bottomSheet.show(parentFragmentManager, "BookDetailBottomSheet")
+                        viewModel.clearFilteredBooks()
+                    } else {
+                        Toast.makeText(requireContext(), "Bu kategoriye uygun kitap bulunamadı.", Toast.LENGTH_SHORT).show()
+                    }
                 }
-            }
         }
+
 
         lifecycleScope.launch {
             viewModel.errorMessage.collectLatest {
