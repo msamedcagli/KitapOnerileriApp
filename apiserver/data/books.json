@@ -4,363 +4,800 @@
     "title": "Kürk Mantolu Madonna",
     "author": "Sabahattin Ali",
     "category": "Modern Roman",
-    "image": "/bookimages/1-kurk-mantolu-madonna.jpg"
+    "image": "/bookimages/1-kurk-mantolu-madonna.jpg",
+    "summary": "Kürk Mantolu Madonna, Sabahattin Ali'nin en etkileyici romanlarından biridir ve insan ruhunun derinliklerine inen bir aşk hikâyesi anlatır. Romanın anlatıcısı, bir şirkette işe başlar ve burada içine kapanık, silik bir memur olan Raif Efendi ile tanışır. Herkesin küçümsediği bu adamın sessizliğinin ardında bambaşka bir dünya olduğunu fark eder. Tesadüfen Raif Efendi'nin defterini okur ve onun gençliğinde Berlin’de yaşadığı büyük aşkı öğrenir. Raif, sanata ilgi duyan, duygusal bir gençken Almanya’ya gönderilir. Burada bir resim sergisinde Kürk Mantolu Madonna adlı tabloyu görür ve tablonun sahibi olan Maria Puder ile tanışır. Maria, güçlü, bağımsız bir kadındır. Aralarındaki ilişki, klasik bir aşktan çok daha derindir; iki yaralı ruhun birbirini tanıması ve kabullenmesi gibidir. Ancak bu aşk, hayatın acımasızlığı ve yanlış anlamalar yüzünden bir trajediye dönüşür. Raif, Türkiye’ye dönmek zorunda kalır ve Maria’dan uzak kalır. Sonunda onun ölüm haberini alır. Bu olay, Raif Efendi’yi hayata karşı tamamen duyarsızlaştırır. Dış dünyada sıradan bir memur gibi görünmesinin ardında, kalbinde gömülü bu büyük ve sarsıcı aşk vardır. Roman, hayatta göründüğümüz kişi ile içimizde taşıdığımız kişi arasındaki farkı derin bir duyarlılıkla işler."
   },
   {
     "id": 2,
     "title": "Gurur ve Önyargı",
     "author": "Jane Austen",
     "category": "Klasik Roman",
-    "image": "/bookimages/2-gurur-ve-onyargi.jpg"
+    "image": "/bookimages/2-gurur-ve-onyargi.jpg",
+    "summary": "Gurur ve Önyargı, 19. yüzyıl İngiltere’sinde geçen, sınıf farklılıkları, evlilik baskısı, aile yapısı ve bireysel özgürlük temalarını işleyen bir aşk ve karakter gelişimi romanıdır. Romanın ana karakteri Elizabeth Bennet, zeki, ironi yeteneği yüksek, güçlü bir kadındır. Beş kız kardeşin ikincisi olan Elizabeth, ailesinin sosyal statüsü gereği evlenmeleri gerektiği baskısıyla yaşar. Annesi, kızlarının iyi bir evlilik yapmasını hayatının amacı haline getirmiştir. Kasabaya gelen zengin bekar beyefendi Bay Bingley ve onun daha da zengin ve kibirli arkadaşı Bay Darcy, olayların fitilini ateşler. Bingley, Elizabeth’in ablası Jane ile ilgilenirken, Elizabeth ve Darcy arasında başta büyük bir gurur ve önyargı duvarı örülür. Elizabeth, Darcy’yi kibirli ve soğuk bulurken; Darcy de onun alt sınıftan oluşunu küçümser. Ancak zamanla ikisi de birbirlerini daha derinden tanımaya başlar. Yanılgılar, yanlış anlaşılmalar ve duygusal çatışmalar sonucunda hem Elizabeth hem de Darcy içsel bir dönüşüm geçirirler. Roman, sadece bir aşk hikayesi değildir. Aynı zamanda insan ilişkilerinin derinliklerine, sınıfsal farkların bireyler üzerindeki etkisine ve gururun insanları nasıl kör edebileceğine dair incelikli bir anlatıdır. Sonunda Elizabeth ve Darcy, hem kendi içlerindeki duvarları yıkar hem de birbirlerine hak ettikleri sevgiyi verirler."
   },
   {
     "id": 3,
     "title": "1984",
     "author": "George Orwell",
-    "category": "Distopya",
-    "image": "/bookimages/3-1984.jpg"
+    "category": "Distopik Roman",
+    "image": "/bookimages/3-1984.jpg",
+    "summary": "1984, totaliter bir rejimin insan hayatını nasıl acımasızca kontrol ettiğini ve bireysel özgürlüğün nasıl yok edildiğini anlatan güçlü bir Distopik Romandır. Roman, Büyük Birader'in her şeyi gözetlediği ve düşüncelerin bile denetlendiği bir dünyada geçer. Ana karakter Winston Smith, bu baskıcı rejime karşı içten içe direnir ve gerçekliği sorgulamaya başlar. Ancak, sistemin acımasız gücü karşısında kişisel özgürlük ve direniş neredeyse imkansız hale gelir. 1984, özgürlük, propaganda, gözetim ve gerçeğin çarpıtılması gibi evrensel temalarla insanlık için bir uyarı niteliğindedir."
   },
   {
     "id": 4,
     "title": "Kuyucaklı Yusuf",
     "author": "Sabahattin Ali",
     "category": "Modern Roman",
-    "image": "/bookimages/4-kuyucakli-yusuf.jpg"
+    "image": "/bookimages/4-kuyucakli-yusuf.jpg",
+    "summary": "Kuyucaklı Yusuf, Anadolu'nun ücra bir köyünde büyüyen, saf ve iyi niyetli genç bir adamın hayat mücadelesini anlatır. Yusuf, haksızlıklarla ve baskılarla dolu çevresinde sevgi arar ancak karşılaştığı zorluklar onu sertleştirir. Köyün yozlaşmış düzeni içinde, temiz kalpliliği ve adalete olan inancıyla çatışmaya girer. Roman, bireyin toplumla, geleneklerle ve adaletsizlikle olan amansız savaşını, Anadolu insanının yaşam biçimini ve iç dünyasını derinlemesine işler."
   },
   {
     "id": 5,
     "title": "İnsan Neyle Yaşar?",
     "author": "Lev Nikolayeviç Tolstoy",
     "category": "Felsefe",
-    "image": "/bookimages/5-insan-neyle-yasar.jpg"
+    "image": "/bookimages/5-insan-neyle-yasar.jpg",
+    "summary": "Tolstoy’un bu kısa hikayesi, insanın gerçek yaşam kaynağının maddi şeyler değil, sevgi ve insanlık olduğunu anlatır. Hikaye, yoksul bir adamın hayat yolculuğu üzerinden, insanların ne ile yaşadığını, neyin onları ayakta tuttuğunu sorgular. İnsan ancak sevgiyle, fedakarlıkla ve başkalarının iyiliği için çalışmakla var olabilir. Tolstoy, basit ama derin anlatımıyla insanın iç dünyasına ayna tutar ve kalpleri ısıtan bir mesaj verir."
   },
   {
     "id": 6,
     "title": "Dedemin Bakkalı",
     "author": "Şermin Yaşar",
-    "category": "Çocuk Kitapları",
-    "image": "/bookimages/6-dedemin-bakkali.jpg"
+    "category": "Çocuk Romanı",
+    "image": "/bookimages/6-dedemin-bakkali.jpg",
+    "summary": "Dedemin Bakkalı, çocuklara nostaljik ve sıcak bir atmosferde büyümenin değerini anlatan samimi bir hikayedir. Roman, küçük bir kasabada dedesinin işlettiği bakkalda geçen anılar ve dostluklar üzerinden, aile bağlarının ve dayanışmanın önemini vurgular. Masalsı ve içten anlatımıyla çocukların ve yetişkinlerin kalbine dokunan bu eser, geçmişe duyulan özlemi ve küçük mutlulukların kıymetini gözler önüne serer."
   },
   {
     "id": 7,
     "title": "Otomatik Portakal",
     "author": "Anthony Burgess",
-    "category": "Distopya",
-    "image": "/bookimages/7-otomatik-portakal.jpg"
+    "category": "Distopik Roman",
+    "image": "/bookimages/7-otomatik-portakal.jpg",
+    "summary": "Otomatik Portakal, şiddet ve özgür irade temalarını çarpıcı bir şekilde işleyen distopik bir romandır. Genç Alex ve arkadaşlarının şiddet dolu eylemleri sonrası yakalanması ve devlet tarafından uygulanan deneysel rehabilitasyon süreci anlatılır. Roman, bireyin özgürlüğü ile toplumun düzeni arasındaki çatışmayı, ahlak ve kontrol kavramlarını sorgular. Burgess’in kendine özgü dili ve karanlık atmosferiyle insan doğasının karmaşıklığını gözler önüne serer."
   },
   {
     "id": 8,
     "title": "Şeker Portakalı",
     "author": "Jose Mauro de Vasconcelos",
-    "category": "Çocuk Kitapları",
-    "image": "/bookimages/8-seker-portakali.jpg"
+    "category": "Çocuk Romanı",
+    "image": "/bookimages/8-seker-portakali.jpg",
+    "summary": "Şeker Portakalı, hayatın zorluklarıyla mücadele eden küçük Zeze’nin içten ve dokunaklı hikayesini anlatır. Zeze, hayal gücü ve doğayla olan benzersiz bağı sayesinde içinde bulunduğu olumsuz koşullara rağmen umutla büyür. Roman, sevginin, dostluğun ve masumiyetin gücünü ön plana çıkararak, çocukluğun saf ve temiz dünyasını kalplere işler."
   },
   {
     "id": 9,
     "title": "Sineklerin Tanrısı",
     "author": "Sir William Gerald Golding",
-    "category": "Distopya",
-    "image": "/bookimages/9-sineklerin-tanrisi.jpg"
+    "category": "Distopik Roman",
+    "image": "/bookimages/9-sineklerin-tanrisi.jpg",
+    "summary": "Sineklerin Tanrısı, ıssız bir adada mahsur kalan bir grup çocuğun medeniyetten uzaklaştıkça içlerindeki karanlık ve vahşi doğayla yüzleşmesini anlatır. Başlangıçta düzen kurmaya çalışan çocuklar, zamanla korku, güç ve kaosun pençesine düşer. Roman, insan doğasının karanlık yönlerini, toplumun ince çizgisini ve uygarlığın kırılganlığını çarpıcı şekilde gözler önüne serer."
   },
   {
     "id": 10,
     "title": "İçimizdeki Şeytan",
     "author": "Sabahattin Ali",
     "category": "Modern Roman",
-    "image": "/bookimages/10-icimizdeki-seytan.jpg"
+    "image": "/bookimages/10-icimizdeki-seytan.jpg",
+    "summary": "İçimizdeki Şeytan, genç ve idealist Ali’nin, kendi iç dünyasında ve çevresindeki toplumda yaşadığı çatışmaları anlatır. Ali, toplumun çarpık değerleri, ahlaki ikilemler ve kendi karanlık yönleriyle mücadele ederken, insanın içindeki kötülüğün ve kendini yıkmanın trajedisini derinlemesine işler. Roman, bireyin içsel şeytanlarıyla ve toplumsal baskılarla başa çıkma çabasını güçlü bir psikolojik çözümlemeyle sunar."
   },
   {
     "id": 11,
     "title": "İnce Memed - 1",
     "author": "Yaşar Kemal",
     "category": "Modern Roman",
-    "image": "/bookimages/11-ince-memed-1.jpg"
+    "image": "/bookimages/11-ince-memed-1.jpg",
+    "summary": "İnce Memed - 1, Anadolu'nun zor coğrafyasında yaşayan bir genç olan Memed’in, zalim ağalara karşı verdiği özgürlük mücadelesini anlatır. Memed, haksızlıklara ve baskılara boyun eğmeyip, halkının sesi olur. Roman, doğa ile insanın iç içe geçtiği, adalet, cesaret ve direnişin destansı öyküsünü gözler önüne serer. Yaşar Kemal’in güçlü anlatımıyla Anadolu’nun yoksulluğu ve direnişi dokunaklı bir şekilde canlanır."
   },
   {
     "id": 12,
     "title": "Savaş Sanatı",
     "author": "Sun Tzu",
-    "category": "Felsefe",
-    "image": "/bookimages/12-savas-sanati.jpg"
+    "category": "Askeri Strateji",
+    "image": "/bookimages/12-savas-sanati.jpg",
+    "summary": "Savaş Sanatı, binlerce yıl önce yazılmış olsa da strateji, liderlik ve çatışma yönetimi alanında günümüzde de geçerliliğini koruyan evrensel prensipler sunar. Kitap, savaşın sadece bir güç mücadelesi olmadığını, zeka, planlama ve psikolojik üstünlükle kazanılabileceğini anlatır. Sun Tzu, düşmanı tanımanın, kendini bilmeyi ve çatışmadan kaçınmayı stratejinin temel taşları olarak vurgular."
   },
   {
     "id": 13,
     "title": "Puslu Kıtalar Atlası",
     "author": "İhsan Oktay Anar",
-    "category": "Fantastik",
-    "image": "/bookimages/13-puslu-kitalar-atlasi.jpg"
+    "category": "Modern Roman",
+    "image": "/bookimages/13-puslu-kitalar-atlasi.jpg",
+    "summary": "Puslu Kıtalar Atlası, Osmanlı’nın son dönemlerinde, gizemli ve mistik olayların gölgesinde geçen, fantastik ve tarihî unsurların harmanlandığı bir macera romanıdır. Kitap, unutulmuş şehirler, büyülü objeler ve karmaşık karakterler aracılığıyla, insanın arayışını, bilgiye olan susuzluğunu ve kaderin ince oyunlarını keşfeder. Anar’ın kendine has dili ve zengin hayal gücüyle, zaman ve mekânın ötesinde büyülü bir yolculuk sunar."
   },
   {
     "id": 14,
     "title": "Simyacı",
     "author": "Paulo Coelho",
     "category": "Modern Roman",
-    "image": "/bookimages/14-simyaci.jpg"
+    "image": "/bookimages/14-simyaci.jpg",
+    "summary": "Simyacı, hayallerinin peşinden gitmenin önemini anlatan, evrensel bir yolculuk hikayesidir. Santiago adlı genç çobanın, kişisel efsanesini gerçekleştirmek için çıktığı macera, insanın iç dünyasına ve evrenle uyumuna dair derin mesajlar taşır."
   },
   {
     "id": 15,
     "title": "Küçük Prens",
     "author": "Antoine de Saint-Exupery",
-    "category": "Çocuk Kitapları",
-    "image": "/bookimages/15-kucuk-prens.jpg"
+    "category": "Çocuk Romanı",
+    "image": "/bookimages/15-kucuk-prens.jpg",
+    "summary": "Fransız Devrimi sonrası Paris’te geçen dramatik bir hikaye."
   },
   {
     "id": 16,
     "title": "Martı Jonathan Livingston",
     "author": "Richard Bach",
     "category": "Kişisel Gelişim",
-    "image": "/bookimages/16-marti-jonathan-livingston-dorduncu-bolum-ilavesiyle.jpg"
+    "image": "/bookimages/16-marti-jonathan-livingston-dorduncu-bolum-ilavesiyle.jpg",
+    "summary": "Martı Jonathan Livingston, sıradan yaşamın ötesine geçmeyi arzulayan bir martının özgürlük ve mükemmellik yolculuğunu anlatır. Jonathan, uçmanın tekniklerini keşfeder ve sınırlarını zorlayarak hayallerinin peşinden gider. Roman, bireysel özgürlük, kendini aşma ve ruhun yükselişi temalarını işler. İlham verici anlatımıyla, cesaret ve azmin simgesi haline gelmiştir."
   },
   {
     "id": 17,
     "title": "Uçurtma Avcısı",
     "author": "Khaled Hosseini",
     "category": "Modern Roman",
-    "image": "/bookimages/17-ucurtma-avcisi.jpg"
+    "image": "/bookimages/17-ucurtma-avcisi.jpg",
+    "summary": "Afganistan’ın savaşla parçalanan topraklarında dostluğun, ihanetin ve kefaretin izinde bir yaşam yolculuğu. Amir ve Hasan’ın çocukluk yıllarından başlayan hikaye, ülkedeki politik çalkantılar ve iç savaşın gölgesinde, sevginin ve vicdanın sınandığı bir serüvene dönüşür. Kaybolan masumiyet, aile bağları ve affetmenin gücü derinlemesine işlenir."
   },
   {
     "id": 18,
     "title": "Ikigai",
-    "author": "",
+    "author": "Héctor García, Francesc Miralles",
     "category": "Kişisel Gelişim",
-    "image": "/bookimages/18-ikigai.jpg"
+    "image": "/bookimages/18-ikigai.jpg",
+    "summary": "Japonya’nın Okinawa adasında yaşayanların uzun ve mutlu yaşam sırlarını keşfe çıkan bu eser, yaşam amacını bulmanın ve her sabah yeniden doğmanın felsefesini sunar. İnsanın ruhundaki dengeyi, tutkuyu ve anlamı yakalamak için pratik öneriler ve felsefi bakış açısı sunan, kalplerde iz bırakan bir rehber."
   },
   {
     "id": 19,
     "title": "Devlet",
     "author": "Platon (Eflatun)",
     "category": "Felsefe",
-    "image": "/bookimages/19-devlet.jpg"
+    "image": "/bookimages/19-devlet.png",
+    "summary": "Adaletin ne olduğu, ideal toplumun nasıl olması gerektiği sorularıyla derin bir düşünsel yolculuğa çıkaran Platon, Sokrates’in diyaloglarıyla birey ve devlet ilişkisini irdeler. Filozof-kralın hüküm sürdüğü, erdemin ve bilgeliğin rehber olduğu ütopya, insan doğasının, bilgi ve gerçekliğin evrensel sorularını yüzyıllardır düşündürür."
   },
   {
     "id": 20,
     "title": "Olağanüstü Bir Gece",
     "author": "Stefan Zweig",
     "category": "Modern Roman",
-    "image": "/bookimages/20-olaganustu-bir-gece.jpg"
+    "image": "/bookimages/20-olaganustu-bir-gece.jpg",
+    "summary": "Bir gecede yaşanan tutkular, korkular ve hesaplaşmaların öyküsü. İki yabancının kaderin oyunuyla kesişen yolları, insan ruhunun kırılganlıkları ve arayışlarını gözler önüne serer. Zweig’in içten ve derin anlatımı, insanın en karanlık ve aydınlık yanlarını aynı anda hissettirir."
   },
   {
     "id": 21,
     "title": "Çavdar Tarlasında Çocuklar",
     "author": "Jerome David Salinger",
     "category": "Gençlik Romanı",
-    "image": "/bookimages/21-cavdar-tarlasinda-cocuklar.jpg"
+    "image": "/bookimages/21-cavdar-tarlasinda-cocuklar.jpg",
+    "summary": "Gençlik sancılarını, yalnızlığı ve toplumun sahte yüzlerini mercek altına alan Holden Caulfield’ın hikayesi. Salinger, ironik ve içten diliyle, büyümenin zorluklarını ve arayışını, yetişkin dünyasının karmaşasını bir çocuğun gözünden ustalıkla resmeder."
   },
   {
     "id": 22,
     "title": "Fahrenheit 451",
     "author": "Ray Bradbury",
-    "category": "Distopya",
-    "image": "/bookimages/22-fahrenheit.jpg"
+    "category": "Distopik Roman",
+    "image": "/bookimages/22-fahrenheit.jpg",
+    "summary": "Kitapların yasaklandığı, bilgi ve düşüncenin yok sayıldığı karanlık bir gelecekte, itfaiyeci Montag’ın uyanışı ve direniş öyküsü. Bradbury, teknoloji ve otoritenin insan ruhunu nasıl kararttığını, özgür düşüncenin ve bilginin değerini çarpıcı bir distopya aracılığıyla anlatır."
   },
   {
     "id": 23,
     "title": "Yüzyıllık Yalnızlık",
     "author": "Gabriel García Márquez",
     "category": "Modern Roman",
-    "image": "/bookimages/23-yuzyillik-yalnizlik.jpg"
+    "image": "/bookimages/23-yuzyillik-yalnizlik.jpg",
+    "summary": "Macondo kasabasının ve Buendía ailesinin kuşaklar boyunca süren destansı hikayesi. Büyülü gerçekçilikle dokunan roman, aşk, kader, yalnızlık ve zamanın döngüselliği temalarını derinlemesine   işler. Márquez, kelimelerle örülü bu evrende insan ruhunun en gizemli yanlarını ortaya çıkarır."
   },
   {
     "id": 24,
     "title": "Bir Ömür Nasıl Yaşanır?",
     "author": "İlber Ortaylı",
     "category": "Biyografi / Anı",
-    "image": "/bookimages/24-bir-omur-nasil-yasanir.jpg"
+    "image": "/bookimages/24-bir-omur-nasil-yasanir.jpg",
+    "summary": "Tarihçi İlber Ortaylı'nın yaşamdan aldığı derslerle dolu, bilgi ve tecrübelerini sade bir dille aktardığı, hayatı anlamlandırma ve doğru yaşama sanatına dair düşüncelerini paylaştığı etkileyici bir eserdir."
   },
   {
     "id": 25,
     "title": "Kırmızı Pazartesi",
     "author": "Gabriel García Márquez",
     "category": "Modern Roman",
-    "image": "/bookimages/25-kirmizi-pazartesi.jpg"
+    "image": "/bookimages/25-kirmizi-pazartesi.jpg",
+    "summary": "Bir cinayetin kaçınılmazlığını ve küçük bir kasabada yaşanan trajediyi, büyülü gerçekçilik ve insan psikolojisi ışığında anlatan kısa ama etkileyici bir roman. Ölüm ve kaderin sessiz izlerini sürer."
   },
   {
     "id": 26,
     "title": "Karamazov Kardeşler",
     "author": "Fyodor Mihayloviç Dostoyevski",
     "category": "Klasik Roman",
-    "image": "/bookimages/26-karamazov-kardesler.jpg"
+    "image": "/bookimages/26-karamazov-kardesler.png",
+    "summary": "Dostoyevski’nin insan ruhunun derinliklerine indiği bu başyapıt, inanç, ahlak, özgür irade ve kardeşlik temalarını felsefi ve psikolojik bir bakış açısıyla ele alır. Karamazov ailesinin karmaşık ilişkileri ve trajedisi üzerinden evrensel sorular sorar."
   },
   {
     "id": 27,
     "title": "Hayvan Çiftliği",
     "author": "George Orwell",
-    "category": "Distopya",
-    "image": "/bookimages/27-hayvan-ciftligi.jpg"
+    "category": "Distopik Roman",
+    "image": "/bookimages/27-hayvan-ciftligi.jpg",
+    "summary": "Bir çiftlik hayvanlarının insanlara karşı başkaldırısını ve sonrasında yaşanan totaliter rejim eleştirisini alegorik ve çarpıcı bir şekilde anlatan roman. Gücün yozlaşması ve ideallerin nasıl çiğnendiğini gözler önüne serer."
   },
   {
     "id": 28,
     "title": "Değirmen",
     "author": "Sabahattin Ali",
     "category": "Modern Roman",
-    "image": "/bookimages/28-degirmen.jpg"
+    "image": "/bookimages/28-degirmen.jpg",
+    "summary": "Sabahattin Ali’nin Anadolu insanının yaşam mücadelelerini ve sosyal adaletsizlikleri ustalıkla resmettiği, insan doğasının içsel çatışmalarını işleyen dokunaklı bir eser."
   },
   {
     "id": 29,
     "title": "Pembe Fili Düşünme",
     "author": "Zeynep Selvili Çarmıklı",
     "category": "Kişisel Gelişim",
-    "image": "/bookimages/29-pembe-fili-dusunme.jpg"
+    "image": "/bookimages/29-pembe-fili-dusunme.jpg",
+    "summary": "Olumsuz düşünce kalıplarını fark edip değiştirmeye odaklanan, zihinsel dönüşüm ve pozitif yaşam için pratik öneriler sunan, hayatın içinden ve samimi bir dille yazılmış kişisel gelişim kitabı."
   },
   {
     "id": 30,
     "title": "Beyaz Gemi",
     "author": "Cengiz Aytmatov",
     "category": "Modern Roman",
-    "image": "/bookimages/30-beyaz-gemi.jpg"
+    "image": "/bookimages/30-beyaz-gemi.jpg",
+    "summary": "Doğa, insan ve masumiyet temalarını bir araya getiren, küçük bir çocuğun gözünden anlatılan dokunaklı ve büyülü bir roman. Hayatın anlamı ve insanın doğayla ilişkisi üzerine derin düşünceler barındırır."
   },
   {
     "id": 31,
     "title": "Charlie’nin Çikolata Fabrikası",
     "author": "Roald Dahl",
-    "category": "Çocuk Kitapları",
-    "image": "/bookimages/31-charlienin-cikolata-fabrikasi.jpg"
+    "category": "Çocuk Romanı",
+    "image": "/bookimages/31-charlienin-cikolata-fabrikasi.jpg",
+    "summary": "Fakir ama iyi kalpli Charlie’nin, gizemli ve büyülü bir çikolata fabrikasını ziyaret edişinin renkli ve eğlenceli hikayesi. Hayal gücü, iyilik ve macera dolu, çocukların ve yetişkinlerin sevdiği unutulmaz bir masal."
   },
   {
     "id": 32,
     "title": "Dirilt Kalbini",
     "author": "Nouman Ali Khan",
     "category": "Kişisel Gelişim",
-    "image": "/bookimages/32-dirilt-kalbini.jpg"
+    "image": "/bookimages/32-dirilt-kalbini.jpg",
+    "summary": "İslam’ın ruhani ve ahlaki değerlerini derinlemesine ele alan bu eser, kalbin gerçek anlamda nasıl canlandırılacağını, inanç ve yaşam arasındaki bağları ustalıkla ortaya koyar. Nouman Ali Khan, okuyucularına içsel dönüşüm ve manevî güçlenme yollarını açar."
   },
   {
     "id": 33,
     "title": "Sırça Köşk",
     "author": "Sabahattin Ali",
     "category": "Modern Roman",
-    "image": "/bookimages/33-sirca-kosk.jpg"
+    "image": "/bookimages/33-sirca-kosk.jpg",
+    "summary": "Bireyin iç dünyasındaki kırılganlıklar ve toplumun dayattığı katı kurallar arasındaki çatışmayı, hüzünlü ve gerçekçi bir dille anlatan Sabahattin Ali’nin unutulmaz kısa romanı."
   },
   {
     "id": 34,
     "title": "Momo",
     "author": "Michael Ende",
-    "category": "Fantastik",
-    "image": "/bookimages/34-momo.jpg"
+    "category": "Fantastik / Gençlik Romanı",
+    "image": "/bookimages/34-momo.jpg",
+    "summary": "Zamanın nasıl çalındığını ve modern yaşamın hızına karşı insanlığın kaybettiği değerleri, küçük kız Momo’nun macerası üzerinden masalsı ve düşündürücü biçimde anlatan büyülü bir hikaye."
   },
   {
     "id": 35,
     "title": "Göçüp Gidenler Koleksiyoncusu",
     "author": "Şermin Yaşar",
     "category": "Modern Roman",
-    "image": "/bookimages/35-gocup-gidenler-koleksiyoncusu.jpg"
+    "image": "/bookimages/35-gocup-gidenler-koleksiyoncusu.jpg",
+    "summary": "Geçmişle yüzleşen ve kayıpların, anıların içinde var olmaya çalışan karakterlerin iç dünyalarını keşfeden, hayatın anlamı ve insan ilişkileri üzerine derinlemesine düşünen bir roman."
   },
   {
     "id": 36,
     "title": "Tutunamayanlar",
     "author": "Oğuz Atay",
     "category": "Modern Roman",
-    "image": "/bookimages/36-tutunamayanlar.jpg"
+    "image": "/bookimages/36-tutunamayanlar.jpg",
+    "summary": "Türk edebiyatının dönüm noktalarından biri olan bu roman, modern insanın yabancılaşmasını, toplumsal normlara uyum sağlayamayan bireylerin sancılarını özgün ve ironik bir dille anlatır."
   },
   {
     "id": 37,
     "title": "Od",
     "author": "İskender Pala",
     "category": "Tarihî Roman",
-    "image": "/bookimages/37-od.jpg"
+    "image": "/bookimages/37-od.jpg",
+    "summary": "Osmanlı’nın görkemli ve gizemli dönemlerinde, tarih ve aşkın iç içe geçtiği, güçlü karakterlerin kaderini anlatan, zengin kültürel ve tarihi dokusuyla büyüleyen bir roman."
   },
   {
     "id": 38,
     "title": "Ustalık Gerektiren Kafaya Takmama Sanatı",
     "author": "Mark Manson",
     "category": "Kişisel Gelişim",
-    "image": "/bookimages/38-ustalik-gerektiren-kafaya-takmama-sanati.jpg"
+    "image": "/bookimages/38-ustalik-gerektiren-kafaya-takmama-sanati.jpg",
+    "summary": "Mutluluk ve başarı peşinde koşarken önemli olanın neye kafayı takıp takmamak olduğunu cesurca ve samimi bir dille anlatan, çağdaş kişisel gelişim literatüründe fark yaratan bir rehber."
   },
   {
     "id": 39,
     "title": "Bağırmayan Anneler",
     "author": "Hatice Kübra Tongar",
     "category": "Eğitim / Ebeveynlik",
-    "image": "/bookimages/39-bagirmayan-anneler.jpg"
+    "image": "/bookimages/39-bagirmayan-anneler.jpg",
+    "summary": "Çocuk yetiştirirken şiddetten uzak, sevgi ve anlayışla yaklaşmanın yollarını örneklerle ve psikolojik yaklaşımlarla anlatan, ebeveynlere yol gösteren önemli bir eser."
   },
   {
     "id": 40,
     "title": "Diriliş Neslinin Amentüsü",
     "author": "Sezai Karakoç",
     "category": "Felsefe",
-    "image": "/bookimages/40-dirilis-neslinin-amentusu.jpg"
+    "image": "/bookimages/40-dirilis-neslinin-amentusu.jpg",
+    "summary": "Sezai Karakoç’un modern insanın varoluşsal krizlerine ve umuda dair düşüncelerini şiirsel bir dille sunduğu, kültür, tarih ve inanç temalarını derinlemesine işleyen felsefi bir başyapıt."
   },
   {
     "id": 41,
     "title": "Beyaz Zambaklar Ülkesinde",
     "author": "Grigori Spiridonoviç Petrov",
     "category": "Tarihî Roman",
-    "image": "/bookimages/41-beyaz-zambaklar-ulkesinde.jpg"
+    "image": "/bookimages/41-beyaz-zambaklar-ulkesinde.jpg",
+    "summary": "Finlandiya’nın yoksulluktan refaha ve modernleşmeye uzanan ilham verici dönüşümünü anlatan gerçekçi ve öğretici bir roman. Toplumsal değişimin, eğitim ve milli bilinçle nasıl mümkün olduğunu gözler önüne serer."
   },
   {
     "id": 42,
     "title": "Şah ve Sultan",
     "author": "İskender Pala",
     "category": "Tarihî Roman",
-    "image": "/bookimages/42-sah-ve-sultan.jpg"
+    "image": "/bookimages/42-sah-ve-sultan.jpg",
+    "summary": "İran ve Osmanlı arasındaki siyasi ve kültürel mücadeleleri, iki güçlü liderin vizyonu ve hırsları ekseninde ele alan tarihî bir roman. İskender Pala’nın edebi zarafetiyle, savaş ve barışın inceliklerini yansıtır."
   },
   {
     "id": 43,
     "title": "Her Şey Seninle Başlar",
     "author": "Mümin Sekman",
     "category": "Kişisel Gelişim",
-    "image": "/bookimages/43-her-sey-seninle-baslar.jpg"
+    "image": "/bookimages/43-her-sey-seninle-baslar.jpg",
+    "summary": "Kişisel farkındalık, motivasyon ve yaşam kalitesini artırmaya odaklanan pratik tavsiyelerle dolu, bireyin kendi hayatını dönüştürme yolculuğuna rehberlik eden samimi bir kişisel gelişim kitabı."
   },
   {
     "id": 44,
     "title": "Dürümler Karışık - Kral Şakir 6",
     "author": "Varol Yaşaroğlu",
-    "category": "Çocuk Kitapları",
-    "image": "/bookimages/44-durumler-karisik-kral-sakir.jpg"
+    "category": "Çocuk Romanı",
+    "image": "/bookimages/44-durumler-karisik-kral-sakir.jpg",
+    "summary": "Çocukların sevgiyle takip ettiği Kral Şakir serisinin eğlenceli altıncı kitabı. Renkli maceralar, neşeli karakterler ve öğretici hikâyelerle dolu, çocukların hayal dünyasını genişleten eğlenceli bir eser."
   },
   {
     "id": 45,
     "title": "Osmanlı İmparatorluğu Klasik Çağ 1300 - 1600",
     "author": "Halil İnalcık",
     "category": "Tarih",
-    "image": "/bookimages/45-osmanli-imparatorlugu-klasik-cag-1300.jpg"
+    "image": "/bookimages/45-osmanli-imparatorlugu-klasik-cag-1300.jpg",
+    "summary": "Osmanlı İmparatorluğu’nun yükseliş dönemini ayrıntılı ve akademik bir yaklaşımla inceleyen, tarih araştırmalarına ışık tutan temel bir eser. İmparatorluğun yönetim yapısı, kültürel gelişimi ve sosyal dinamikleri detaylıca ele alınır."
   },
   {
     "id": 46,
     "title": "Güneşi Uyandıralım",
     "author": "Jose Mauro de Vasconcelos",
-    "category": "Çocuk Kitapları",
-    "image": "/bookimages/46-gunesi-uyandiralim.jpg"
+    "category": "Çocuk Romanı",
+    "image": "/bookimages/46-gunesi-uyandiralim.jpg",
+    "summary": "Brezilya’nın yoksul mahallelerinde yaşayan çocukların umut ve hayallerle dolu dünyasını samimi bir dille anlatan, sıcak ve dokunaklı bir çocuk romanı."
   },
   {
     "id": 47,
     "title": "21. Yüzyıl İçin 21 Ders",
     "author": "Yuval Noah Harari",
     "category": "Felsefe / Sosyoloji",
-    "image": "/bookimages/47-21-yuzyil-icin-21-ders.jpg"
+    "image": "/bookimages/47-21-yuzyil-icin-21-ders.jpg",
+    "summary": "Teknolojinin, siyaset ve toplumun hızla değiştiği bir dünyada, insanlığın karşı karşıya olduğu temel sorunları irdeler. Harari, geleceğe dair bilinçli düşünmenin ve doğru soruları sormanın önemini vurgular."
   },
   {
     "id": 48,
     "title": "Eğitim: Bir Kitle İmha Silahı",
     "author": "John Taylor Gatto",
     "category": "Eğitim",
-    "image": "/bookimages/48-egitim-bir-kitle-imha-silahi.jpg"
+    "image": "/bookimages/48-egitim-bir-kitle-imha-silahi.jpg",
+    "summary": "Modern eğitim sistemlerinin bireyselliği ve yaratıcılığı nasıl yok ettiğine dair sert ve çarpıcı bir eleştiri. Gatto, eğitimdeki kalıpların ve sistemin nasıl değişmesi gerektiğine dair radikal fikirler sunar."
   },
   {
     "id": 49,
     "title": "Leyla ile Mecnun",
     "author": "Burak Aksak",
     "category": "Modern Roman",
-    "image": "/bookimages/49-leyla-ile-mecnun.jpg"
+    "image": "/bookimages/49-leyla-ile-mecnun.jpg",
+    "summary": "Efsanevi aşk hikayesini günümüzün mizahi ve absürt gerçekliğiyle harmanlayan, karakterlerin sıra dışı dünyasında dostluk, sevgi ve hayatın anlamı üzerine derinleşen eğlenceli ve dokunaklı bir roman."
   },
   {
     "id": 50,
     "title": "Hayat Cesurlara Torpil Geçer Özel Baskı",
     "author": "Bircan Yıldırım",
     "category": "Kişisel Gelişim",
-    "image": "/bookimages/50-hayat-cesurlara-torpil-gecer.jpg"
+    "image": "/bookimages/50-hayat-cesurlara-torpil-gecer.jpg",
+    "summary": "Hayatın zorlukları karşısında cesaretin ve kararlılığın önemini anlatan, kişisel dönüşüm ve özgüven kazanımı üzerine ilham verici bir yol haritası."
   },
   {
     "id": 51,
     "title": "Gazi Mustafa Kemal Atatürk",
     "author": "İlber Ortaylı",
     "category": "Biyografi / Anı",
-    "image": "/bookimages/51-gazi-mustafa-kemal-ataturk.jpg"
+    "image": "/bookimages/51-gazi-mustafa-kemal-ataturk.jpg",
+    "summary": "Türkiye Cumhuriyeti’nin kurucusu Atatürk’ün hayatı, düşünceleri ve liderlik vasıflarını tarihçi İlber Ortaylı’nın ustalıkla kaleme aldığı derin ve kapsamlı bir biyografi."
   },
   {
     "id": 52,
     "title": "Saklı Seçilmişler",
     "author": "Soner Yalçın",
     "category": "Araştırma / İnceleme",
-    "image": "/bookimages/52-sakli-secilmisler.jpg"
+    "image": "/bookimages/52-sakli-secilmisler.jpg",
+    "summary": "Türkiye'nin yakın tarihine ışık tutan, derin devlet, gizli örgütler ve siyasi entrikalar üzerine kapsamlı araştırmalarla dolu çarpıcı bir inceleme kitabı."
+  },
+  {
+    "id": 53,
+    "title": "Kırmızı Saçlı Kadın",
+    "author": "Orhan Pamuk",
+    "category": "Modern Roman",
+    "image": "/bookimages/53-kirmizi-sacli-kadin.jpg",
+    "summary": "Genç bir çırak ile kuyucu ustası arasındaki bağ, Oidipus ve Rüstem-Sührab mitlerine paralel bir şekilde ilerler. Aşk, suç ve kaderin iç içe geçtiği bu romanda bireyin babasıyla yüzleşmesi teması modern bir bakışla işlenir."
+  },
+  {
+    "id": 54,
+    "title": "Hayvanlardan Tanrılara - Sapiens",
+    "author": "Yuval Noah Harari",
+    "category": "Tarih / Antropoloji",
+    "image": "/bookimages/54-hayvanlardan-tanrılara-sapiens.jpg",
+    "summary": "Harari, insan türünün evrimsel geçmişini ve Homo sapiens'in dünyaya nasıl hükmettiğini sürükleyici ve düşündürücü bir dille anlatıyor. Tarım devriminden yapay zekaya kadar uzanan büyük insanlık hikayesi."
+  },
+  {
+    "id": 55,
+    "title": "Oz",
+    "author": "Adam Fawer",
+    "category": "Bilimkurgu / Gerilim",
+    "image": "/bookimages/55-oz.jpg",
+    "summary": "Paralel evrenler, bilinçaltı ve insan algısının sınırları üzerine kurgulanan sürükleyici bir roman. Fawer, bilimsel teorileri kurgusal evrende ustalıkla harmanlıyor."
+  },
+  {
+    "id": 56,
+    "title": "Galat-ı Meşhur - Doğru Bildiğiniz Yanlışlar",
+    "author": "Soner Yalçın",
+    "category": "Araştırma / İnceleme",
+    "image": "/bookimages/56-galat-ı-meshur-dogru-bildiginiz-yanlislar.jpg",
+    "summary": "Soner Yalçın, toplumda doğru bilinen birçok bilgiyi sorguluyor ve arkasındaki çarpıtılmış gerçekleri gözler önüne seriyor. Ezber bozan, ufuk açıcı bir çalışma."
+  },
+  {
+    "id": 57,
+    "title": "Yeraltından Notlar",
+    "author": "Fyodor Mihayloviç Dostoyevski",
+    "category": "Klasik / Psikolojik Roman",
+    "image": "/bookimages/57-yeraltindan-notlar.jpg",
+    "summary": "Toplumdan soyutlanmış bir adamın içsel hesaplaşmalarını ve insan doğasının karanlık yönlerini anlatan bu eser, modern bireyin yalnızlığını sorgulayan öncü bir romandır."
+  },
+  {
+    "id": 58,
+    "title": "Suç ve Ceza",
+    "author": "Fyodor Mihayloviç Dostoyevski",
+    "category": "Klasik / Psikolojik Roman",
+    "image": "/bookimages/58-suc-ve-ceza.jpg",
+    "summary": "Raskolnikov adlı genç bir öğrencinin işlediği cinayetle başlayan vicdan azabı ve içsel çöküş süreci, insan ruhunun derinliklerine inen unutulmaz bir anlatımla sunuluyor."
+  },
+  {
+    "id": 59,
+    "title": "Masumiyet Müzesi",
+    "author": "Orhan Pamuk",
+    "category": "Modern Roman / Aşk",
+    "image": "/bookimages/59-masumiyet-Muzesi.jpg",
+    "summary": "Zengin bir adamın, uzak bir akrabasına duyduğu takıntılı aşkı ve bu aşkın ardından oluşturduğu eşya dolu bir müze üzerinden nostaljik İstanbul’un izleri anlatılıyor. Aşk, takıntı ve hafıza üzerine derin bir roman."
+  },
+  {
+    "id": 60,
+    "title": "Kumarbaz",
+    "author": "Fyodor Mihayloviç Dostoyevski",
+    "category": "Klasik / Psikolojik Roman",
+    "image": "/bookimages/60-kumarbaz.jpg",
+    "summary": "Dostoyevski’nin kendi hayatından izler taşıyan bu romanda, ana karakter Aleksey’in kumar tutkusuyla başlayan yıkımı anlatılır. Aşk, bağımlılık ve insan iradesi üzerine çarpıcı bir psikolojik çözümleme sunar."
+  },
+  {
+    "id": 61,
+    "title": "Romeo ve Juliet",
+    "author": "William Shakespeare",
+    "category": "Tiyatro / Trajedi",
+    "image": "/bookimages/61-romeo-ve-juliet.jpg",
+    "summary": "İki düşman ailenin çocukları olan Romeo ve Juliet’in destansı aşkı, trajik bir sona sürüklenir. Aşkın, kaderin ve toplumsal çatışmaların Shakespeare’in diliyle ölümsüzleştiği klasik bir eser."
+  },
+  {
+    "id": 62,
+    "title": "Genç Werther'in Acıları",
+    "author": "Johann Wolfgang Von Goethe",
+    "category": "Dramatik Roman",
+    "image": "/bookimages/62-genc-wertherin-acilari.jpg",
+    "summary": "Genç bir adamın umutsuz aşkı karşısında yaşadığı içsel çöküş ve toplumsal yabancılaşma anlatılır. Goethe’nin bu eseri, romantizmin öncüsü olarak bireyin duygusal derinliğini etkileyici bir şekilde yansıtır."
+  },
+  {
+    "id": 63,
+    "title": "Cesur Yeni Dünya",
+    "author": "Aldous Huxley",
+    "category": "",
+    "image": "/bookimages/63-cesur-yeni-dunya.jpg",
+    "summary": "Teknolojinin ve genetik mühendisliğin insanlığı baskıladığı distopik bir geleceği anlatan bu romanda, bireyselliğin yok oluşu ve özgürlük arayışı çarpıcı bir şekilde sorgulanır."
+  },
+  {
+    "id": 64,
+    "title": "Harry Potter Serisi (7 kitap)",
+    "author": "J. K. Rowling",
+    "category": "Fantastik / Gençlik Romanı",
+    "image": "/bookimages/64-harry-potter-serisi.jpg",
+    "summary": "Harry Potter’ın büyücülük dünyasındaki serüvenlerini, dostluklarını, düşmanlarını ve kaderini konu alan bu seri; cesaret, sadakat ve iyilik mücadelesi üzerine epik bir anlatım sunar."
+  },
+  {
+    "id": 65,
+    "title": "Hamlet",
+    "author": "William Shakespeare",
+    "category": "Tiyatro / Trajedi",
+    "image": "/bookimages/65-hamlet.jpg",
+    "summary": "Danimarka prensi Hamlet’in, babasının ölümünün ardından yaşadığı intikam arayışı, delilik, ihanet ve varoluş sorgusuyla örülmüş bir trajedidir. 'Olmak ya da olmamak' sorusunun efsaneleştiği bu eser, insan doğasının en karanlık yönlerini irdeler."
+  },
+  {
+    "id": 66,
+    "title": "Babalar ve Oğullar",
+    "author": "Ivan Sergeyeviç Turgenyev",
+    "category": "Klasik / Toplumsal Roman",
+    "image": "/bookimages/66-babalar-ve-ogullar.jpg",
+    "summary": "Nihilist genç Arkadiy ve dostu Bazarov’un taşra ziyaretiyle başlayan hikâye, kuşaklar arası çatışmaları ve bireysel inançların toplumla çarpışmasını gözler önüne serer. Rus edebiyatında dönüm noktası sayılan derinlikli bir eserdir."
+  },
+  {
+    "id": 67,
+    "title": "Bütün Şiirleri - Sabahattin Ali",
+    "author": "Sabahattin Ali",
+    "category": "Şiir",
+    "image": "/bookimages/67-butun-siirleri-sabahattin-ali.jpg",
+    "summary": "Sabahattin Ali’nin aşk, hüzün, memleket ve yalnızlık temalarını işlediği tüm şiirlerini içeren bu derleme, hem edebi hem duygusal bir yolculuğa çıkarır. Dili yalın, duygusu derindir."
+  },
+  {
+    "id": 68,
+    "title": "Lavinia - Aşk Şiirleri",
+    "author": "Özdemir Asaf",
+    "category": "Şiir",
+    "image": "/bookimages/68-lavinia.jpg",
+    "summary": "Özdemir Asaf’ın ikonik aşk şiiri 'Lavinia'nın adını taşıyan bu kitapta, aşkın zarif, ince ve çarpıcı yönlerini anlatan şiirler yer alır. Romantik duyguların en sade hâliyle dile geldiği bir eserdir."
+  },
+  {
+    "id": 69,
+    "title": "Dörtlükler",
+    "author": "Ömer Hayyam",
+    "category": "Şiir",
+    "image": "/bookimages/69-dortlukler.jpg",
+    "summary": "Ömer Hayyam’ın evren, yaşam, aşk, şarap ve ölüm üzerine düşündüren rubaileri bu kitapta toplanmıştır. Derin felsefesi ve özgürlükçü tavrıyla yüzyıllara meydan okuyan dizeler sunar."
+  },
+  {
+    "id": 70,
+    "title": "Yalnızlık Paylaşılmaz",
+    "author": "Özdemir Asaf",
+    "category": "Şiir",
+    "image": "/bookimages/70-yalnizlik-paylasilmaz.jpg",
+    "summary": "Yalnızlığın derinliğini ve paylaşılamazlığını işleyen Özdemir Asaf, bu eserinde bireyin iç dünyasına ayna tutar. Sessizliğin sesi gibi okunur, kısa ama etkileyici dizelerle örülüdür."
+  },
+  {
+    "id": 71,
+    "title": "Hafız Divanı",
+    "author": "Hafız-ı Şirazi",
+    "category": "Şiir",
+    "image": "/bookimages/71-hafiz-divani.jpg",
+    "summary": "Klasik Fars edebiyatının dev ismi Hafız’ın aşk, mistisizm ve ilahi sevgi dolu gazellerini içeren bu divan, tasavvufun şiirle buluştuğu eşsiz bir kaynaktır."
+  },
+  {
+    "id": 72,
+    "title": "Henüz Vakit Varken Gülüm",
+    "author": "Nazım Hikmet",
+    "category": "Şiir",
+    "image": "/bookimages/72-henuz-vakit-varken-gulum.jpg",
+    "summary": "Nazım Hikmet’in umut, aşk, özgürlük ve yaşam mücadelesi temalı şiirlerinden oluşan bu seçki, şiirle devrim yapan bir şairin kalbini gözler önüne serer."
+  },
+  {
+    "id": 73,
+    "title": "Dokuza Kadar On",
+    "author": "Özdemir Asaf",
+    "category": "Şiir",
+    "image": "/bookimages/73-dokuza-kadar-on.jpg",
+    "summary": "Özdemir Asaf’ın zekice kurgulanmış, oyunlu ve özgün şiirlerini barındıran bu kitap, hem ironik hem felsefi yönleriyle dikkat çeker. Kelimelerle dans eden bir zihnin ürünü."
+  },
+  {
+    "id": 74,
+    "title": "Hüsn-ü Aşk",
+    "author": "Şeyh Galib",
+    "category": "Şiir",
+    "image": "/bookimages/74-husn-u-ask.jpg",
+    "summary": "Divan edebiyatının şaheserlerinden biri olan bu mesnevi, mecaz yoluyla aşkın, insanın ve hakikatin izini sürer. Tasavvufi anlam derinliğiyle ölümsüzleşmiş bir klasik."
+  },
+  {
+    "id": 75,
+    "title": "Fareler ve İnsanlar",
+    "author": "John Steinbeck",
+    "category": "Klasik Roman",
+    "image": "/bookimages/75-fareler-ve-insanlar.jpg",
+    "summary": " George ve iriyarı saf arkadaşı Lennie, yersiz yurtsuz kişilerdir. Dünyada sahip oldukları  tek şey, aralarındaki dostluk ve kendilerine ait bir araziye sahip olma hayalidir... İki arkadaş, hayallerindeki arazi için gereken parayı biriktirmeyi planlamaktadır. Ama bir çocuğun zekâsına, aynı zamanda da korkunç bir güce sahip olan Lennie'nin başı sürekli derde girmektedir. Ve bu kez yine belaya bulaştığında, George'un çabaları arkadaşını kurtarmaya yetmeyecektir... \n Yalnızlığa terk edilmiş, umarsız insanların öyküsü… "
+  },
+  {
+    "id": 76,
+    "title": "Satranç",
+    "author": "Stefan Zweig",
+    "category": "Psikolojik Roman",
+    "image": "/bookimages/76-satranc.jpg",
+    "summary": "Rastlantı sonucu eline geçirdiği bir kitapla satrancın inceliklerini öğrenerek bu oyunu bir tutkuya dönüştüren ve giderek bu tutkusu yüzünden beyin hummasına yakalanan Dr. B.'nin öyküsüdür görünüşte Satranç. Ama derinlerde bir veda mektubudur aslında. \n Stefan Zweig'ın Brezilya'da sürgündeyken yazdığı ve Şubat 1942'deki intiharından birkaç ay önce tamamladığı Satranç, Avrupa kültürünün nasyonal sosyalist tehlike altında yok oluşuna işaret eder. \n Avrupa kültürüne elveda derken yaşama da veda etmeyi seçen Zweig'ın son yapıtı Satranç, gerilimli kurgusu ve kahramanın ruhsal gelgitlerinin işlendiği dokusuyla, kısa ama her bakımdan etkileyici olağanüstü bir uzun öyküdür."
+  },
+  {
+    "id": 77,
+    "title": "Küçük Kara Balık",
+    "author": "Küçük Kara Balık",
+    "category": "Çocuk Romanı",
+    "image": "/bookimages/77-kucuk-kara-balik.jpg",
+    "summary": "Samed Behrengi(1939-1968), İranlı bir yazar. On bir yıl İran’ın Azerbaycan kesiminde köy köy dolaşarak öğretmenlik yaptı. Öğretmenken bile öğrenciliği bırakmadı: Halkın dilinde dolaşan masalları, söylenceleri derledi, yorumladı, yeniden yazdı. Bu arada Tebriz Üniversitesi'nde İngilizce öğrenimi gördü. 1968 yılının Eylül ayında, daha 29 yaşındayken, Aras Irmağı kıyısında ölüsü bulundu. Yüzerken boğulduğu söylentisi yayıldıysa da buna kimse inanmadı. Çünkü Samed Behrengi, yazdığı masallarla, ülkesinin başına çöreklenmiş Şahlık düzenini açık açık eleştiriyor, her türlü baskı yönetimine karşı çıkıyordu. Küçük Kara Balık, onun yalnızca İran’da değil, dünyanın pek çok ülkesine tanınıp sevilmesine yol açmış ölümsüz bir kitaptır. Bu küçük kitap, Bratislava ve Bolonga Dünya Çocuk Kitapları Fuarlarında ödüller aldı."
+  },
+  {
+    "id": 78,
+    "title": "Toprak Ana",
+    "author": "Cengiz Aytmatov",
+    "category": "Dramatik Roman",
+    "image": "/bookimages/78-toprak-ana.jpg",
+    "summary": "Roman, II. Dünya Savaşı yıllarında, Sovyetler Birliği'ndeki küçük bir köyde geçer. Ana karakterimiz Tolgonay Ana, hem savaşın hem de hayatın acımasızlığıyla yüzleşmiş bir kadındır. Kocası, oğlu ve gelini savaşa gitmiş; hepsini bir bir kaybetmiştir.\n Tolgonay, tüm bu kayıplara rağmen toprak'la konuşarak teselli arar. Çünkü o, toprağa sadece bir üretim alanı değil; geçmişin, sevdanın ve direncin sembolü olarak bakar. Toprağa dökülen ter, kan ve gözyaşı... hepsi onun için kutsaldır. \n Bu roman; bir annenin diliyle savaşın anlamsızlığını, emeğin değerini, dayanmanın yüceliğini ve insanın toprağa bağlı kaderini anlatır."
+  },
+  {
+    "id": 79,
+    "title": "Beyaz Diş",
+    "author": "Jack London",
+    "category": "Macera Romanı",
+    "image": "/bookimages/79-beyaz-dis.jpg",
+    "summary": "Kuzeyin soğuk ormanlarında yaşam kavgası... Açlık ve hayatta kalma çabası...Beyaz Diş. bir kurt kırması; damarlarında hem kurt hem de köpek kanı dolaşıyor. Ormanda yapayalnız, hayatta kalmaya çalışıyor. Bir gün, o ana dek yaşadığı mağaranın duvarını geçip hayata atılıyor ve her şeyi en baştan keşfetmeye koyuluyor. Vahşi doğanın çetin şartları, yaratihşmdaki sertliği gün geçtikçe daha çok besliyor. Ve sonunda Beyaz Diş, amansız bir kurt oluyor. Derken efendiyi, yani inşam tanıyor.Usta yazar Jack London. Beyaz Dişte bir kurt ve ona sahip çıkan farklı efendiler üzerinden evcilleşmenin imkânını sorguluyor."
+  },
+  {
+    "id": 80,
+    "title": "Ana",
+    "author": "Maksim Gorki",
+    "category": "Politik Roman",
+    "image": "/bookimages/80-ana.jpg",
+    "summary": "Rus işçi sınıfının uyanışını ve devrimci hareketlerin doğuşunu anlatır.Başkahraman Pelageya Nilovna (yani ana), önce pasif ve korkak bir kadındır. Ancak oğlu Pavel’in sosyalist fikirlerinden etkilenerek bilinçlenir, cesaret kazanır ve sonunda devrimci hareketin bir parçası olur."
+  },
+  {
+    "id": 81,
+    "title": "Saatleri Ayarlama Enstitüsü",
+    "author": "Ahmet Hamdi Tanpınar",
+    "category": "Modern Roman",
+    "image": "/bookimages/81-saatleri-ayarlama-enstitusu.jpg",
+    "summary": "Romanın başkahramanı Hayri İrdal, doğu ile batı arasında bocalayan, geçmişe tutunmuş ama geleceğe de ayak uydurmak isteyen bir tiptir. Tesadüfen tanıştığı Halit Ayarcı, ona 'Saatleri Ayarlama Enstitüsü' adlı bir kurum kurdurur. \n Bu enstitünün amacı saatleri ayarlamak görünse de, aslında bürokrasinin saçmalığı, Batılılaşma çabalarının yüzeyselliği ve toplumun yapay dönüşümü alaycı bir dille anlatılır. \n Roman boyunca Hayri İrdal’ın iç dünyasıyla toplumun çatışması paralel ilerler. Geçmiş, nostalji, zaman kavramı ve bireyin toplum içinde kayboluşu ana eksenlerdendir."
+  },
+  {
+    "id": 82,
+    "title": "Dövüş Kulübü",
+    "author": "Chuck Palahniuk",
+    "category": "Postmodern Roman",
+    "image": "/bookimages/82-dovus-kulubu.jpg",
+    "summary": "İlk kez yayımlandığı 1996'dan beri bir yeraltı klasiği olarak anılan Dövüş Kulübü, yeni binyılın eşiğinde geçen bir anti-ütopya öyküsünü anlatıyor. Yaşadığı hayattan nefret eden, ölüm düşüncesini saplantı haline getirmiş, insani yakınlığı kanser dayanışma gruplarında arayan genç adam. Aynı dayanışma gruplarının bir başka müdavimi, toplum kaçkını bir genç kadın. Ve Tyler Durden; yalanlar ve mutsuzlukla dolu bir dünyaya kendi yöntemleriyle saldıran yarı çılgın bir kurtarıcı, baştan çıkarıcı bir intikam meleği. Tyler'ın felsefesine göre, tüketim kültürünün uyuşturucu etkisinden kurtulmanın yolu, fiziksel acıyla tanışarak yeniden doğmaktır. Çok geçmeden, gecenin geç saatlerinde bar bodrumlarında toplanan gizli bir dövüş kulübü ülkenin dört yanını saracaktır. Ama Tyler'ın dünyasında sınırlara ve kurallara yer yoktur. Kendi bedenini örseleyen bir müritler ordusu, toplum düzenini ve konformizmi imha etmek üzere Tyler'ın peşine takılır..."
+  },
+  {
+    "id": 83,
+    "title": "Bir Şeftali Bin Şeftali",
+    "author": "Samad Behrangi",
+    "category": "Çocuk Romanı",
+    "image": "/bookimages/83-bir-seftali-bin-seftali.jpg",
+    "summary": "Yaşlı bir bahçıvan, çocukken yediği lezzetli bir şeftalinin çekirdeğini saklar ve yıllar sonra onu toprağa eker. Sabırla suladığı ve baktığı bu ağaç zamanla büyür, meyve verir. Fakat bu meyvelerden birinin yolculuğu farklı olur... \n Bir çocuğun ağzından anlatılan bu hikâyede, o meyvedeki çekirdeğin başka nerelere, hangi ellere ulaştığını görürüz. Küçücük bir tohumun, binlerce şeftaliye dönüşmesini ve bu döngünün insan yaşamındaki yansımalarını izleriz. \n Ama aslında anlatılan sadece bir meyve değil; emek, paylaşım, doğaya saygı, üretim ve nesiller arası miras.."
+  },
+  {
+    "id": 84,
+    "title": "Nietzsche Ağladığında",
+    "author": "Irvin D. Yalom",
+    "category": "Psikolojik Roman",
+    "image": "/bookimages/84-nietzsche-agladiginda.jpg",
+    "summary": "19.yüzyılın sonunda Viyana’da, genç doktor Josef Breuer ile ünlü filozof Friedrich Nietzsche’nin yolları kesişir. Breuer, Nietzsche’nin karanlık düşüncelerinden ve depresyonundan kurtulması için psikoterapi uygular.\n Roman, gerçek tarihî olaylarla kurgusal diyalogları harmanlayarak, iki büyük zihnin — felsefe ve psikoterapinin öncülerinin — karşılaşmasını ve karşılıklı dönüşümünü anlatır.\n Nietzsche’nin düşünceleri, Breuer’in bilimsel yaklaşımıyla çatışırken; ikisi de varoluşun anlamını, acıyı, özgürlüğü ve insanın içsel mücadelelerini yeniden sorgular."
+  },
+  {
+    "id": 85,
+    "title": "Empati",
+    "author": "Adam Fawer",
+    "category": "Bilimkurgu / Gerilim",
+    "image": "/bookimages/85-empati.jpg",
+    "summary": "Empati, özel yeteneklere sahip bireylerin dünyasında geçer. Ana karakterlerden Laszlo, empatik bir öğretmendir; başkalarının duygularını hissedebilir ve yönlendirebilir. Onun gibi yeteneklere sahip öğrencileri Winter ve Elijah ile birlikte, bu özel güçlerin farkına varan bir grup insanı eğitir.\n Ancak, Darian adlı bir kadın, bu güçleri kötüye kullanmak isteyen bir örgüt için çalışmaktadır. Görevi, Laszlo'nun öğrencilerini örgüte kazandırmaktır. Darian, Laszlo'yu baştan çıkararak bu amacına ulaşmaya çalışır. Ancak zamanla Laszlo'ya aşık olur ve olaylar karmaşık bir hal alır.\n Roman, empati kavramını derinlemesine işlerken, insan doğasının, arzularının ve bilinçaltının sınırlarını sorgular. Felsefi ve bilimsel göndermelerle zenginleştirilmiş, sürükleyici bir anlatı sunar."
+  },
+  {
+    "id": 86,
+    "title": "Bir Çift Yürek",
+    "author": "Marlo Morgan",
+    "category": "Klasik / Toplumsal Roman",
+    "image": "/bookimages/86-bir-cift-yurek.jpg",
+    "summary": "Bir Çift Yürek, Anadolu’nun yoksul ve zorlu köy yaşamını gözler önüne seren, emek ve sevgiyle yoğrulmuş bir hikayedir. Romanın kahramanları, hayatın tüm güçlüklerine rağmen birbirlerine bağlı kalmayı başarır; toprakla, kaderle ve yoksunluklarla mücadele ederken, insan olmanın anlamını, dayanışmayı ve umudu yaşatırlar. Bu eser, sade insanların sıradan ama derin hayatlarından bir kesit sunar; aşkın ve direncin insan ruhunu nasıl ayakta tuttuğunu anlatır. Toplumsal gerçekçiliğin güçlü izlerini taşıyan bu roman, Kemal Tahir’in kaleminden Anadolu’nun en gerçekçi portrelerinden biridir."
+  },
+  {
+    "id": 87,
+    "title": "Taht Oyunları",
+    "author": "George R.R. Martin",
+    "category": "Fantastik / Gençlik Romanı",
+    "image": "/bookimages/87-taht-oyunlari.jpg",
+    "summary": "Westeros’un soğuk kuzeyinden güneşli güneyine kadar farklı ailelerin, hanedanların taht kavgasını konu alır. Starklar, Lannisterlar, Baratheonlar gibi güçlü aileler, güç, intikam, sadakat ve ihanet içinde örülmüş karmaşık ilişkilerle sarmaş dolaştır. Kralın ölümüyle başlayan taht mücadelesi, sadece insanlar arasında değil; eski ejderhaların uyanışı ve unutulmuş karanlık güçlerin yükselişiyle de büyür. İhanetler, savaşlar ve gizemlerle dolu bu serüven, insan doğasının hem karanlık hem de onurlu yanlarını çarpıcı biçimde gösterir."
+  },
+  {
+    "id": 88,
+    "title": "Othello",
+    "author": "William Shakespeare",
+    "category": "Dramatik Roman",
+    "image": "/bookimages/88-othello.jpg",
+    "summary": "Othello, Venedikli saygın bir komutandır ve Desdemona ile evlenmiştir. Ancak Othello’nun yakın arkadaşı Iago, kıskançlık ve hırsla dolup taşar ve Othello’ya Desdemona’nın kendisini aldattığına dair yalanlar fısıldar. Iago’nun ustaca oyunları ve manipülasyonları sonucu, Othello derin bir kıskançlık girdabına kapılır. İhanet ve kuşkuların ateşi büyürken, trajedi kaçınılmaz olur. Othello’nun içindeki sevgiyle kıskançlık arasındaki çatışma, insan ruhunun karanlık ve kırılgan yanlarını gözler önüne serer."
+  },
+  {
+    "id": 89,
+    "title": "Koku: Bir Katilin Öyküsü",
+    "author": "Patrick Süskind",
+    "category": "Psikolojik Gerilim",
+    "image": "/bookimages/89-koku-bir-katilin-oykusu.jpg",
+    "summary": "18.yüzyıl Fransa’sında doğan Jean-Baptiste Grenouille, doğuştan neredeyse insanüstü bir koku alma duyusuna sahiptir. Ancak kendisi kokusuzdur; dünyaya adeta görünmez bir varlık olarak gelir. Koku peşindeki takıntısı, onu olağanüstü ama ürkütücü bir yolculuğa sürükler. Grenouille, dünyanın en nadide kokularını yakalamaya ve yaratmaya çalışırken, bunun için cinayetlere bile başvurur. Olayların merkezinde, benzersiz bir koku yaratma arzusu ve bu takıntının yarattığı dehşet vardır."
+  },
+  {
+    "id": 90,
+    "title": "Kadın Haklarının Gerekçelendirilmesi",
+    "author": "Mary Wollstonecraft",
+    "category": "Felsefe / Sosyoloji",
+    "image": "/bookimages/90-kadin-haklarinin-gerekcelendirilmesi.jpg",
+    "summary": "Kadın haklarının gerekçelendirilmesi, kadınların eşitlik taleplerinin tarihsel ve felsefi temellerini ortaya koyar. Bu gerekçelendirme; insan hakları evrenselliği, adalet, eşitlik, özgürlük, toplumsal sözleşme teorileri ve etik ilkeler üzerinden yapılır. Kadınların eğitim hakkından çalışma hayatına, siyasi temsil hakkından aile içi haklara kadar geniş bir yelpazede eşit hak talebi, toplumsal yapının adaletli ve sürdürülebilir olması için zorunlu görülür. \n Metinler, patriarkal yapının eleştirisini yapar, ataerkil düzenin kadınları dışlayan yapısını çözümlemeye çalışır ve cinsiyet temelli ayrımcılığın kaldırılmasının gerekçelerini mantıksal ve etik olarak savunur."
+  },
+  {
+    "id": 91,
+    "title": "Cehenneme Övgü",
+    "author": "Gündüz Vassaf",
+    "category": "Felsefe",
+    "image": "/bookimages/91-cehenneme-ovgu.jpg",
+    "summary": "Vassaf, “Cehenneme Övgü”de insanın karanlık taraflarına, acılarına ve sıkışmışlıklarına yönelir. Bu karanlıklar aslında varoluşun ayrılmaz parçalarıdır; onları reddetmek yerine anlamaya ve kucaklamaya davet eder. Toplumun kalıplarından, modern hayatın dayattığı yüzeysellikten sıyrılarak, bireyin kendi cehennemini keşfetmesini ve orada bile bir anlam bulmasını anlatır.\n Yazar, okuyucuyu cesaretle kendi iç dünyasının derinliklerine inmeye çağırır; orada hem hapsolmuşluğu hem de özgürlüğün kıvılcımını görmek mümkündür. Kısacası, karanlıkta saklı olanın, aydınlık kadar değerli olduğunu fısıldayan bir metin."
+  },
+  {
+    "id": 92,
+    "title": "Yüzüklerin Efendisi",
+    "author": "J.R.R. Tolkien",
+    "category": "Fantastik / Gençlik Romanı",
+    "image": "/bookimages/92-yuzuklerin-efendisi.jpg",
+    "summary": "Orta Dünya’da, gücün ve yozlaşmanın simgesi olan Tek Yüzük’ü yok etmek üzere bir grup kahraman toplanır. Frodo Baggins liderliğindeki bu yolculuk, elfler, cüceler, insanlar ve büyücüler arasında destansı bir mücadeleye dönüşür. Kötülüğün lordu Sauron’un karanlık güçlerine karşı verilen savaşta, dostluk, cesaret, fedakârlık ve umut ön plandadır. Yüzük’ün taşıdığı büyülü çekim ve kötü niyet, kahramanları sınarken, Orta Dünya’nın kaderi bu küçük halkın omuzlarındadır."
+  },
+  {
+    "id": 93,
+    "title": "Bir Geyşanın Anıları",
+    "author": "Arthur Golden",
+    "category": "Tarihî Kurgu",
+    "image": "/bookimages/93-bir-geysanin-anilari.jpg",
+    "summary": "Roman, 1920’ler Japonya’sında küçük bir balıkçı köyünde doğan Chiyo adlı kızın, zorunlu olarak bir geyşa evine satılmasını ve burada geçirdiği eğitimle ünlü bir geyşaya dönüşme sürecini anlatır. Chiyo’nun hayatı, güzellik, sanat ve zarafetle dolu olsa da, arka planda çektiği acılar, rekabetler ve aşk hayatındaki zorluklar romanın temelini oluşturur. Savaşın gölgesinde şekillenen bu öykü, gelenek, onur ve kişisel mücadele temalarını işler."
+  },
+  {
+    "id": 94,
+    "title": "Denizler Altında 20 Bin Fersah",
+    "author": "Jules Verne",
+    "category": "Bilimkurgu",
+    "image": "/bookimages/94-denizler-altinda-20bin-fersah.jpg",
+    "summary": "Profesör Aronnax, yardımcısı Conseil ve kanadalı balina avcısı Ned Land, esrarengiz bir deniz canavarını araştırmak üzere denize açılırlar. Ancak bu canavarın aslında gelişmiş bir denizaltı olan Nautilus olduğu ortaya çıkar. Kaptan Nemo’nun komutasındaki Nautilus’ta başlayan bu macera, okyanusların bilinmeyen derinliklerinde geçer. Deniz altı yaşamının olağanüstü güzellikleri, tehlikeleri ve teknolojik mucizeleri arasında sürükleyici bir yolculuk yaşanır."
+  },
+  {
+    "id": 95,
+    "title": "Gün Olur Asra Bedel",
+    "author": "Cengiz Aytmatov",
+    "category": "Klasik / Toplumsal Roman",
+    "image": "/bookimages/95-gun-olur-asra-bedel.jpg",
+    "summary": "Aytmatov, bu eserinde insan hayatının geçiciliği ve anların ne denli değerli olduğu üzerine derinlemesine düşünceler sunar. Hikâyeler aracılığıyla, bazen bir günün, hatta bir anın, bir asra bedel olabileceğini; insanın yaşamındaki dönüm noktalarının, karşılaşılan zorlukların ve alınan kararların bütün hayatı nasıl şekillendirdiğini gözler önüne serer. Aytmatov’un kendine özgü lirizmi ve doğa betimlemeleriyle süslenen roman, insana dair evrensel soruları da barındırır: Zaman nedir? Hayat nasıl anlam kazanır? İnsan nasıl var olur?"
+  },
+  {
+    "id": 96,
+    "title": "Monte Kristo Kontu",
+    "author": "Alexandre Dumas",
+    "category": "Macera Romanı",
+    "image": "/bookimages/96-monte-kristo-kontu.jpg",
+    "summary": "Genç denizci Edmond Dantès, haksız yere ihanet ve iftira sonucu hapse atılır. Yıllarca süren esaretin ardından kaçmayı başarır ve büyük bir hazineyi ele geçirerek Monte Kristo Kontu kimliğine bürünür. Artık amacı, kendisini mahkum edenlerden intikam almaktır. Ancak intikam yolunda karşılaştığı zorluklar, dostluklar ve aşk, hikâyeyi çok katmanlı ve derin bir insanlık dramına dönüştürür. Dantès’in dönüşümü, affetme ve adalet kavramları etrafında şekillenir."
+  },
+  {
+    "id": 97,
+    "title": "Aşk",
+    "author": "Elif Şafak",
+    "category": "Aşk ve Maneviyat",
+    "image": "/bookimages/97-ask.jpg",
+    "summary": "Roman, günümüz Amerika’sında yaşayan Ella Rubinstein’ın hikâyesiyle başlar. Eşi tarafından terk edilen Ella, bir gün eşi tarafından hediye edilen Rumi’nin mesnevisini okumaya karar verir ve bu mistik eser onun hayatını derinden değiştirir. Paralel olarak, 13. yüzyılda Mevlânâ Celâleddîn Rûmî ve Şems-i Tebrizi’nin dostluğu ve aşkı anlatılır. İki zaman dilimindeki hikâyeler, aşkın farklı biçimlerini, dönüşüm gücünü ve insanın kendini keşfetme yolculuğunu gözler önüne serer."
+  },
+  {
+    "id": 98,
+    "title": "Dune",
+    "author": "Frank Herbert",
+    "category": "Bilimkurgu",
+    "image": "/bookimages/98-dune.jpg",
+    "summary": "Uzak gelecekte, evrenin en değerli kaynağı olan “baharat” melanjın tek üretim yeri olan çöl gezegeni Arrakis’e ailesiyle birlikte gelen genç Paul Atreides’in hayatı, büyük bir entrika ve ihanetin ardından kökten değişir. Çölün zorlu doğası, yerel halk Fremenler ve evrensel güç oyunları arasında hayatta kalmaya çalışan Paul, kendisini efsanevi bir lider olarak bulur. “Dune”, güç, din, ekoloji ve insan kaderi üzerine derin felsefi sorular soran büyüleyici bir roman."
+  },
+  {
+    "id": 99,
+    "title": "Sapiens: Hayvanlardan Tanrılara - İnsan Türünün Kısa Bir Tarihi",
+    "author": "Yuval Noah Harari",
+    "category": "Popüler Bilim",
+    "image": "/bookimages/99-sapiens.jpg",
+    "summary": "Harari, Homo sapiens’in yaklaşık 70.000 yıl önce ortaya çıkışından başlayarak, insanlığın dünyayı nasıl şekillendirdiğini, biyolojik ve kültürel evrimini ustaca anlatır. Bilişsel devrim, tarım devrimi, bilim devrimi gibi dönüm noktalarını gözler önüne sererken, insanların toplum, din, ekonomi ve politika gibi karmaşık sistemleri nasıl kurduklarını da açıklığa kavuşturur. Kitap, insanın kendi yarattığı hayali gerçeklikler ve güç yapıları üzerinden dünyayı değiştirişini sorgular."
+  },
+  {
+    "id": 100,
+    "title": "Fedailerin Kalesi Alamut",
+    "author": "Vladimir Bartol",
+    "category": "Tarihî Roman",
+    "image": "/bookimages/100-fedailerin-kalesi-alamut.jpg",
+    "summary": "11.yüzyıl İran’ında geçen roman, Haşhaşiler tarikatının lideri Hasan Sabbah’ın Alamut Kalesi’ndeki hakimiyetini ve fedailerin (suikastçıların) yetiştirilmesini anlatır. Hasan Sabbah, müridlerini mutlak itaatle bağlı kılmak için bir ütopya ve cennet illüzyonu yaratır; böylece onları fedai olmaya ikna eder. Roman, güç, manipülasyon, inanç ve özgür irade temalarını sorgularken, totaliter rejimlerin ve ideolojilerin insan zihni üzerindeki etkisini çarpıcı biçimde gözler önüne serer."
   }
 ]
+
