@@ -7,36 +7,41 @@ const app = express();
 const port = 3000;
 
 app.use(cors());
-
-// Kök dizindeki statik dosyaları (index.html gibi) servis et
 app.use(express.static(path.join(__dirname)));
-
-// bookimages klasörünü /bookimages olarak servis et
 app.use('/bookimages', express.static(path.join(__dirname, 'bookimages')));
 
-// Kitap verisini data/books.json dosyasından oku
 function kitaplariOku() {
   const dosyaYolu = path.join(__dirname, 'data', 'books.json');
   const veri = fs.readFileSync(dosyaYolu, 'utf-8');
   return JSON.parse(veri);
 }
 
-// Tüm kitapları dönen API
 app.get('/api/kitaplar', (req, res) => {
   try {
-    const kitaplar = kitaplariOku();
+    let kitaplar = kitaplariOku();
+
+    const q = req.query.q;
+
+    if (q) {
+      const search = q.toLowerCase();
+      kitaplar = kitaplar.filter(k =>
+        k.title.toLowerCase().includes(search) ||
+        k.author.toLowerCase().includes(search) ||
+        k.category.toLowerCase().includes(search)
+      );
+    }
+
     res.json(kitaplar);
   } catch (error) {
     res.status(500).json({ message: 'Kitaplar yüklenemedi.' });
   }
 });
 
-// Belirli kitap (id ile) API
 app.get('/api/kitaplar/:id', (req, res) => {
   try {
     const kitaplar = kitaplariOku();
-    const id = parseInt(req.params.id);
-    const kitap = kitaplar.find(k => k.id === id);
+    const id = req.params.id;
+    const kitap = kitaplar.find(k => k.id === Number(id));
     if (!kitap) return res.status(404).json({ message: 'Kitap bulunamadı.' });
     res.json(kitap);
   } catch (error) {
