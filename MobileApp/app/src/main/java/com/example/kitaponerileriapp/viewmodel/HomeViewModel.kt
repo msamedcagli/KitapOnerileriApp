@@ -19,6 +19,12 @@ class HomeViewModel : ViewModel() {
     private val _newBooks = MutableStateFlow<List<Book>>(emptyList())
     val newBooks: StateFlow<List<Book>> get() = _newBooks
 
+    private val _popularRoman = MutableStateFlow<List<Book>>(emptyList())
+    val popularRoman: StateFlow<List<Book>> get() = _popularRoman
+
+    private val _popularRomanById = MutableStateFlow<List<Book>>(emptyList())
+    val popularRomanById: StateFlow<List<Book>> get() = _popularRomanById
+
     private val _errorMessage = MutableStateFlow<String?>(null)
     val errorMessage: StateFlow<String?> get() = _errorMessage
 
@@ -27,9 +33,14 @@ class HomeViewModel : ViewModel() {
             try {
                 val allBooks = repository.getAllBooks()
 
-                // Örnek filtreleme:
-                _popularBooks.value = allBooks.take(20)      // İlk 10 kitap "popüler"
-                _newBooks.value = allBooks.takeLast(20)      // Son 20 kitap "yeni"
+                // Mevcut gruplar
+                _popularBooks.value = allBooks.take(20)
+                _newBooks.value = allBooks.takeLast(35)
+                _popularRoman.value = allBooks.filter { it.category?.equals("roman", ignoreCase = true) == true }
+
+                // 🎯 Belirli ID'lere göre en popüler romanlar
+                val popularRomanIds = listOf(63, 12, 45, 78, 101, 34, 7, 88, 99, 5)
+                _popularRomanById.value = allBooks.filter { it.id in popularRomanIds }
 
                 _errorMessage.value = null
             } catch (e: Exception) {
