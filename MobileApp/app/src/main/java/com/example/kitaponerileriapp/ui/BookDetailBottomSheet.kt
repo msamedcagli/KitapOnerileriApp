@@ -9,15 +9,19 @@ import com.bumptech.glide.Glide
 import com.example.kitaponerileriapp.databinding.FragmentBookDetailBinding
 import com.example.kitaponerileriapp.model.Book
 import android.util.Log
+import androidx.core.content.ContextCompat
+import com.example.kitaponerileriapp.R
 
 class BookDetailBottomSheet : BottomSheetDialogFragment() {
 
     private var _binding: FragmentBookDetailBinding? = null
     private val binding get() = _binding!!
 
+    private var isFavorite = false  // Favori durumu
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?,
+        savedInstanceState: Bundle?
     ): View? {
         _binding = FragmentBookDetailBinding.inflate(inflater, container, false)
         return binding.root
@@ -47,10 +51,22 @@ class BookDetailBottomSheet : BottomSheetDialogFragment() {
 
             Glide.with(requireContext())
                 .load(imageUrl)
-                .placeholder(com.example.kitaponerileriapp.R.drawable.ic_launcher_foreground)
-                .error(com.example.kitaponerileriapp.R.drawable.ic_launcher_foreground)
+                .placeholder(R.drawable.ic_launcher_foreground)
+                .error(R.drawable.ic_launcher_foreground)
                 .into(binding.bookImage)
 
+
+            // Tıklama ile toggle et
+            binding.favoriteIcon.setOnClickListener {
+                isFavorite = !isFavorite
+                if (isFavorite) {
+                    binding.favoriteIcon.setImageResource(R.drawable.favorite)
+                    binding.favoriteIcon.setColorFilter(ContextCompat.getColor(requireContext(), android.R.color.holo_red_dark))
+                } else {
+                    binding.favoriteIcon.setImageResource(R.drawable.favorite_border)
+                    binding.favoriteIcon.setColorFilter(ContextCompat.getColor(requireContext(), android.R.color.black))
+                }
+            }
         }
 
         binding.closeButton.setOnClickListener {
