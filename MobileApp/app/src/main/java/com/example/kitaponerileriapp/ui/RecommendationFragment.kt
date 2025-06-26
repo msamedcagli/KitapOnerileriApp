@@ -79,8 +79,6 @@ class RecommendationFragment : BottomSheetDialogFragment() {
 
                         bottomSheet.show(parentFragmentManager, "BookDetailBottomSheet")
                         viewModel.clearFilteredBooks()
-                    } else {
-                        Toast.makeText(requireContext(), "Bu kategoriye uygun kitap bulunamadı.", Toast.LENGTH_SHORT).show()
                     }
                 }
         }
