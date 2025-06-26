@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.kitaponerileriapp.R
@@ -20,9 +21,11 @@ class BookAdapter(
         private val bookImage: ImageView = itemView.findViewById(R.id.bookImage)
         private val bookTitle: TextView = itemView.findViewById(R.id.bookTitle)
         private val bookAuthor: TextView = itemView.findViewById(R.id.bookAuthor)
+        private val favoriteIcon: ImageView = itemView.findViewById(R.id.favoriteIcon)
+
+        private var isFavorite = false  // Geçici toggle durumu
 
         fun bind(book: Book) {
-            // Logla veriyi kontrol et
             Log.d("BookAdapter", "title: '${book.title}', author: '${book.author}'")
 
             bookTitle.text = book.title ?: "Bilinmeyen Kitap"
@@ -40,8 +43,20 @@ class BookAdapter(
             itemView.setOnClickListener {
                 onItemClick(book)
             }
-        }
 
+            // Kalp ikonuna tıklanınca toggle et
+            favoriteIcon.setOnClickListener {
+                isFavorite = !isFavorite
+
+                if (isFavorite) {
+                    favoriteIcon.setImageResource(R.drawable.favorite)
+                    favoriteIcon.setColorFilter(ContextCompat.getColor(itemView.context, android.R.color.holo_red_dark))
+                } else {
+                    favoriteIcon.setImageResource(R.drawable.favorite_border)
+                    favoriteIcon.setColorFilter(ContextCompat.getColor(itemView.context, android.R.color.black))
+                }
+            }
+        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BookViewHolder {
