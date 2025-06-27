@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.HomeFragment">
+
+    <!-- Scrollable içerik -->
+    <ScrollView
+        android:id="@+id/homeScrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#F4F8F8"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/recommendButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginTop="25dp">
+
+            <!-- Menü + Arama -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="26dp">
+
+                <ImageButton
+                    android:id="@+id/menuButton"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/menu"
+                    app:tint="@color/black"
+                    android:contentDescription="Menü" />
+
+                <EditText
+                    android:id="@+id/searchEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="Kitap ara..."
+                    android:padding="12dp"
+                    android:background="@drawable/search_background"
+                    android:textColor="#000"
+                    android:textColorHint="#888"
+                    android:backgroundTint="#FFFFFF"
+                    android:elevation="4dp"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text" />
+
+                <ImageButton
+                    android:id="@+id/searchButton"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@android:drawable/ic_menu_search"
+                    android:contentDescription="Arama" />
+            </LinearLayout>
+
+            <!-- Arama Sonuçları -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/searchResultsRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginBottom="16dp"
+                tools:listitem="@layout/item_book_card" />
+
+            <!-- Popüler Kitaplar -->
+            <TextView
+                android:id="@+id/popularTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Popüler Kitaplar"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_marginBottom="8dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/popularBooksRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                android:clipToPadding="false"
+                android:paddingEnd="8dp"
+                android:layout_marginBottom="34dp"
+                tools:listitem="@layout/item_book_card" />
+
+            <!-- Yeni Kitaplar -->
+            <TextView
+                android:id="@+id/newBooksTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yeni Eklenenler"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_marginBottom="8dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/newBooksRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                android:clipToPadding="false"
+                android:paddingEnd="8dp"
+                android:layout_marginBottom="34dp"
+                tools:listitem="@layout/item_book_card" />
+
+            <!-- Romanlar -->
+            <TextView
+                android:id="@+id/RomanTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="En Popüler 10 Roman"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_marginBottom="8dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/popularRomanRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                android:clipToPadding="false"
+                android:paddingEnd="8dp"
+                android:layout_marginBottom="34dp"
+                tools:listitem="@layout/item_book_card" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Sabit Kitap Öner Butonu -->
+    <Button
+        android:id="@+id/recommendButton"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:text="📖 Kitap Öner"
+        android:textStyle="bold"
+        android:backgroundTint="#4EA699"
+        android:textColor="#FFFFFF"
+        android:elevation="4dp"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

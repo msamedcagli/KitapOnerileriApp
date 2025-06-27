@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F8F8"
+    android:padding="80dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Uygulama Başlığı -->
+        <TextView
+            android:id="@+id/appTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:paddingBottom="24dp"
+            android:text="Kitap Önerilerim"
+            android:textColor="#388E3C"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:shadowColor="#66000000"
+            android:shadowDx="0"
+            android:shadowDy="2"
+            android:shadowRadius="4"
+            android:letterSpacing="0.05" />
+
+        <!-- Giriş Yap Başlığı -->
+        <TextView
+            android:id="@+id/loginTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giriş Yap"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="32dp" />
+
+        <!-- Email Girişi -->
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:background="@drawable/search_background"
+            android:textColor="#000"
+            android:textColorHint="#888"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Şifre Girişi -->
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Şifre"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:background="@drawable/search_background"
+            android:textColor="#000"
+            android:textColorHint="#888"
+            android:layout_marginBottom="2dp" />
+
+        <TextView
+            android:id="@+id/forgotPasswordText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Şifrenizi mi unuttunuz?"
+            android:textColor="#388E3C"
+            android:textSize="14sp"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="4dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"/>
+
+
+        <!-- Giriş Butonu -->
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Giriş Yap"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:backgroundTint="#4EA699"
+            android:textColor="#FFFFFF" />
+
+        <!-- Kayıt Sayfasına Geçiş -->
+        <TextView
+            android:id="@+id/goToRegisterText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hesabın yok mu? Kayıt ol"
+            android:textColor="#4EA699"
+            android:textSize="14sp"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="14dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

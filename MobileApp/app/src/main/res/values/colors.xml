@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="nav_background">#E6F1EF</color> <!-- Açık yeşilimsi arka plan -->
+    <color name="nav_item_text">#1E3A3A</color> <!-- Koyu yeşil yazı -->
+    <color name="nav_item_icon">#2F6650</color> <!-- Hafif koyu yeşil ikon -->
+
+</resources>

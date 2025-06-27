@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/resultContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F8F8"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".ui.SearchResultsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginBottom="26dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+
+    <ImageButton
+        android:id="@+id/resultsearchBackButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="8dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Geri"
+        android:scaleType="centerInside"
+        android:src="@android:drawable/ic_menu_revert"
+        />
+
+    <EditText
+        android:id="@+id/resultsearchEditText"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:background="@drawable/search_background"
+        android:backgroundTint="#FFFFFF"
+        android:elevation="4dp"
+        android:hint="Kitap ara..."
+        android:padding="12dp"
+        android:textColor="#000"
+        android:textColorHint="#888" />
+
+    <ImageButton
+        android:id="@+id/resultsearchButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:scaleType="centerInside"
+        android:src="@android:drawable/ic_menu_search"
+        android:contentDescription="Ara"
+        />
+
+</LinearLayout>
+
+<androidx.recyclerview.widget.RecyclerView
+android:id="@+id/resultsearchResultsRecyclerView"
+android:layout_width="match_parent"
+android:layout_height="0dp"
+android:layout_weight="1"
+android:visibility="gone" />
+
+    </LinearLayout>
