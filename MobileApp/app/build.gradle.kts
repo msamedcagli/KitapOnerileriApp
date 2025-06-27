@@ -4,6 +4,7 @@ plugins {
     kotlin("kapt")
     id("kotlin-parcelize")
     id("androidx.navigation.safeargs.kotlin")
+    alias(libs.plugins.google.gms.google.services)
 }
 
 android {
@@ -44,8 +45,7 @@ android {
 
 dependencies {
 
-    val nav_version = "2.9.0"
-    implementation("androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version")
+    implementation(libs.firebase.analytics)
 
     implementation(libs.gson)
     implementation(libs.androidx.core.ktx)
@@ -61,8 +61,8 @@ dependencies {
 
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
 
-    implementation("androidx.navigation:navigation-fragment-ktx:2.6.0")
-    implementation("androidx.navigation:navigation-ui-ktx:2.6.0")
+    implementation("androidx.navigation:navigation-fragment-ktx:2.9.0")
+    implementation("androidx.navigation:navigation-ui-ktx:2.9.0")
 
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.retrofit2:converter-moshi:2.9.0")
@@ -71,6 +71,18 @@ dependencies {
 
     implementation("com.github.bumptech.glide:glide:4.15.1")
     kapt("com.github.bumptech.glide:compiler:4.15.1")
+
+    implementation(platform("com.google.firebase:firebase-bom:33.15.0"))
+    implementation ("com.google.firebase:firebase-analytics:22.4.0")
+    implementation("com.google.firebase:firebase-auth:23.2.1")
+    implementation ("com.google.firebase:firebase-messaging:24.1.1")
+    implementation ("com.google.firebase:firebase-firestore-ktx:25.1.4")
+
+    implementation ("com.google.android.material:material:1.12.0")
+    implementation ("androidx.drawerlayout:drawerlayout:1.2.0")
+
+
+
 
 }
 configurations.all {
