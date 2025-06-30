@@ -1,11 +1,16 @@
 package com.example.kitaponerileriapp
 
+import android.Manifest
+import android.content.pm.PackageManager
+import android.os.Build
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Toast
 import androidx.activity.addCallback
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.findNavController
@@ -21,11 +26,32 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     private lateinit var navView: NavigationView
     private lateinit var auth: FirebaseAuth
 
+    private val requestPermissionLauncher =
+        registerForActivityResult(ActivityResultContracts.RequestPermission()) { isGranted: Boolean ->
+            if (isGranted) {
+                Toast.makeText(this, "Bildirimlere izin verildi.", Toast.LENGTH_SHORT).show()
+            } else {
+                Toast.makeText(this, "Bildirim özelliği için izin gerekli.", Toast.LENGTH_LONG).show()
+            }
+        }
+
+    private fun askNotificationPermission() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            if (ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS) !=
+                PackageManager.PERMISSION_GRANTED
+            ) {
+                requestPermissionLauncher.launch(Manifest.permission.POST_NOTIFICATIONS)
+            }
+        }
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        askNotificationPermission()
 
         auth = FirebaseAuth.getInstance()
 
@@ -81,18 +107,36 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
+        val navController = findNavController(R.id.nav_host_fragment)
         when(item.itemId) {
-            R.id.nav_home -> {
-                val navController = findNavController(R.id.nav_host_fragment)
-                navController.navigate(R.id.homeFragment)
+
+            R.id.nav_favorites -> {
+                if (navController.currentDestination?.id == R.id.homeFragment) {
+                    navController.navigate(R.id.action_homeFragment_to_favoritesFragment)
+                } else {
+                    // İstersen burada global action ekleyip kullanabilirsin
+                    Toast.makeText(this, "Lütfen ana sayfadan geçiş yapın.", Toast.LENGTH_SHORT).show()
+                }
+                drawerLayout.closeDrawer(GravityCompat.START)
+                return true
+            }
+            R.id.timer -> {
+                if (navController.currentDestination?.id == R.id.homeFragment) {
+                    navController.navigate(R.id.action_homeFragment_to_timerFragment)
+                } else {
+                    Toast.makeText(this, "Lütfen ana sayfadan geçiş yapın.", Toast.LENGTH_SHORT).show()
+                }
                 drawerLayout.closeDrawer(GravityCompat.START)
                 return true
             }
             R.id.nav_logout -> {
                 auth.signOut()
                 Toast.makeText(this, "Çıkış yapıldı", Toast.LENGTH_SHORT).show()
-                val navController = findNavController(R.id.nav_host_fragment)
-                navController.navigate(R.id.loginFragment)
+                if (navController.currentDestination?.id == R.id.homeFragment) {
+                    navController.navigate(R.id.action_homeFragment_to_loginFragment)
+                } else {
+                    navController.navigate(R.id.loginFragment)
+                }
                 drawerLayout.closeDrawer(GravityCompat.START)
                 return true
             }
