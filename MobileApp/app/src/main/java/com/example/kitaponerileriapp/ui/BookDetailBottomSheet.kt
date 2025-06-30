@@ -11,13 +11,15 @@ import com.example.kitaponerileriapp.model.Book
 import android.util.Log
 import androidx.core.content.ContextCompat
 import com.example.kitaponerileriapp.R
+import androidx.fragment.app.viewModels
+import com.example.kitaponerileriapp.viewmodel.FavoritesViewModel
 
 class BookDetailBottomSheet : BottomSheetDialogFragment() {
 
     private var _binding: FragmentBookDetailBinding? = null
     private val binding get() = _binding!!
 
-    private var isFavorite = false  // Favori durumu
+    private val favoritesViewModel: FavoritesViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -32,6 +34,7 @@ class BookDetailBottomSheet : BottomSheetDialogFragment() {
 
         val book = arguments?.getParcelable<Book>("book")
         if (book != null) {
+            Log.d("BookDetailBS", "Book ID: ${book.id}")
             binding.bookTitle.text = book.title
             binding.bookAuthor.text = "Yazar: ${book.author}"
             binding.bookCategory.text = "Kategori: ${book.category}"
@@ -55,17 +58,20 @@ class BookDetailBottomSheet : BottomSheetDialogFragment() {
                 .error(R.drawable.ic_launcher_foreground)
                 .into(binding.bookImage)
 
+            // Favori durumu kontrolü ve güncelleme
+            favoritesViewModel.favoriteStatusMap.observe(viewLifecycleOwner) { statusMap ->
+                val isFavorite = statusMap[book.id.toString()] ?: false
+                binding.favoriteIcon.setImageResource(
+                    if (isFavorite) R.drawable.favorite else R.drawable.favorite_border
+                )
+                binding.favoriteIcon.setColorFilter(ContextCompat.getColor(requireContext(), if (isFavorite) android.R.color.holo_red_dark else android.R.color.black))
+            }
+            favoritesViewModel.checkFavoriteStatus(book.id.toString())
 
-            // Tıklama ile toggle et
+            // Favori iconuna tıklama
             binding.favoriteIcon.setOnClickListener {
-                isFavorite = !isFavorite
-                if (isFavorite) {
-                    binding.favoriteIcon.setImageResource(R.drawable.favorite)
-                    binding.favoriteIcon.setColorFilter(ContextCompat.getColor(requireContext(), android.R.color.holo_red_dark))
-                } else {
-                    binding.favoriteIcon.setImageResource(R.drawable.favorite_border)
-                    binding.favoriteIcon.setColorFilter(ContextCompat.getColor(requireContext(), android.R.color.black))
-                }
+                Log.d("BookDetailBS", "Favorite icon clicked for book ID: ${book.id}")
+                favoritesViewModel.toggleFavorite(book.id.toString())
             }
         }
 
