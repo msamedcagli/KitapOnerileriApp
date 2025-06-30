@@ -3,15 +3,17 @@
 
     <group android:checkableBehavior="single">
 
-        <item
-            android:id="@+id/nav_home"
-            android:title="Ana Sayfa"
-            android:icon="@drawable/home" />
+        
 
         <item
             android:id="@+id/nav_favorites"
-            android:title="Favoriler"
+            android:title="Favorilerim"
             android:icon="@drawable/favorite" />
+
+        <item
+            android:id="@+id/timer"
+            android:title="Hatırlatıcım"
+            android:icon="@drawable/alarm" />
 
         <item
             android:id="@+id/nav_logout"
