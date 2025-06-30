@@ -17,6 +17,9 @@ import com.example.kitaponerileriapp.network.BookRepository
 import com.example.kitaponerileriapp.network.RetrofitClient
 import kotlinx.coroutines.launch
 
+import androidx.fragment.app.viewModels
+import com.example.kitaponerileriapp.viewmodel.FavoritesViewModel
+
 class SearchResultsFragment : Fragment() {
 
     private var _binding: FragmentSearchResultsBinding? = null
@@ -24,6 +27,7 @@ class SearchResultsFragment : Fragment() {
 
     private lateinit var adapter: BookAdapter
     private val repository = BookRepository(RetrofitClient.apiService)
+    private val favoritesViewModel: FavoritesViewModel by viewModels()
 
     private val args: SearchResultsFragmentArgs by navArgs()
 
@@ -35,12 +39,28 @@ class SearchResultsFragment : Fragment() {
         return binding.root
     }
 
+    override fun onResume() {
+        super.onResume()
+        favoritesViewModel.loadFavoriteBooks() // Fragment tekrar görünür olduğunda favori durumunu yenile
+    }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        adapter = BookAdapter(emptyList()) { selectedBook ->
+        // SwipeRefreshLayout dinleyicisi
+        binding.searchResultsSwipeRefreshLayout.setOnRefreshListener {
+            val searchQuery = args.query.trim()
+            fetchSearchResults(searchQuery)
+            binding.searchResultsSwipeRefreshLayout.isRefreshing = false
+        }
+
+        adapter = BookAdapter(emptyList(), { selectedBook ->
             val action = SearchResultsFragmentDirections.actionSearchResultsFragmentToBookDetailBottomSheet(selectedBook)
             findNavController().navigate(action)
+        }, favoritesViewModel)
+
+        favoritesViewModel.favoriteStatusMap.observe(viewLifecycleOwner) {
+            adapter.updateBooks(adapter.books, it)
         }
 
         binding.resultsearchResultsRecyclerView.layoutManager = GridLayoutManager(requireContext(), 2)
@@ -95,7 +115,10 @@ class SearchResultsFragment : Fragment() {
                     Toast.makeText(requireContext(), "Sonuç bulunamadı", Toast.LENGTH_SHORT).show()
                 }
                 binding.resultsearchResultsRecyclerView.visibility = View.VISIBLE
-                adapter.updateBooks(filteredBooks)
+
+                // Ensure favorite status is loaded before updating adapter
+                favoritesViewModel.loadFavoriteBooks()
+                adapter.updateBooks(filteredBooks, favoritesViewModel.favoriteStatusMap.value ?: emptyMap())
             } catch (e: Exception) {
                 Toast.makeText(requireContext(), "Arama hatası: ${e.localizedMessage}", Toast.LENGTH_LONG).show()
                 Log.e("SearchDebug", "Arama hatası", e)
