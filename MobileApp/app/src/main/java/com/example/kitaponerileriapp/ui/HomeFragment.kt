@@ -24,12 +24,15 @@ import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 
 
+import com.example.kitaponerileriapp.viewmodel.FavoritesViewModel
+
 class HomeFragment : Fragment() {
 
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
 
     private val viewModel: HomeViewModel by viewModels()
+    private val favoritesViewModel: FavoritesViewModel by viewModels()
 
     private lateinit var popularAdapter: BookAdapter
     private lateinit var newBooksAdapter: BookAdapter
@@ -44,8 +47,20 @@ class HomeFragment : Fragment() {
         return binding.root
     }
 
+    override fun onResume() {
+        super.onResume()
+        favoritesViewModel.loadFavoriteBooks() // Fragment tekrar görünür olduğunda favori durumunu yenile
+    }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        // SwipeRefreshLayout dinleyicisi
+        binding.homeSwipeRefreshLayout.setOnRefreshListener {
+            viewModel.fetchAllBooks()
+            favoritesViewModel.loadFavoriteBooks() // Favori durumunu da yenile
+            binding.homeSwipeRefreshLayout.isRefreshing = false
+        }
 
         // Menü butonuna tıklanınca drawer'ı aç
         binding.menuButton.setOnClickListener {
@@ -54,31 +69,38 @@ class HomeFragment : Fragment() {
         }
 
         // Adapter tanımlamaları
-        popularAdapter = BookAdapter(emptyList()) { book ->
+        popularAdapter = BookAdapter(emptyList(), { book ->
             val bottomSheet = BookDetailBottomSheet().apply {
                 arguments = Bundle().apply {
                     putParcelable("book", book)
                 }
             }
             bottomSheet.show(parentFragmentManager, "BookDetailBottomSheet")
-        }
+        }, favoritesViewModel)
 
-        newBooksAdapter = BookAdapter(emptyList()) { book ->
+        newBooksAdapter = BookAdapter(emptyList(), { book ->
             val bottomSheet = BookDetailBottomSheet().apply {
                 arguments = Bundle().apply {
                     putParcelable("book", book)
                 }
             }
             bottomSheet.show(parentFragmentManager, "BookDetailBottomSheet")
-        }
+        }, favoritesViewModel)
 
-        popularRomanAdapter = BookAdapter(emptyList()) { book ->
+        popularRomanAdapter = BookAdapter(emptyList(), { book ->
             val bottomSheet = BookDetailBottomSheet().apply {
                 arguments = Bundle().apply {
                     putParcelable("book", book)
                 }
             }
             bottomSheet.show(parentFragmentManager, "BookDetailBottomSheet")
+        }, favoritesViewModel)
+
+        // Favori durumu değişikliklerini dinle ve adaptörleri güncelle
+        favoritesViewModel.favoriteStatusMap.observe(viewLifecycleOwner) {
+            popularAdapter.updateBooks(popularAdapter.books, it)
+            newBooksAdapter.updateBooks(newBooksAdapter.books, it)
+            popularRomanAdapter.updateBooks(popularRomanAdapter.books, it)
         }
 
         // RecyclerView ayarları
@@ -120,23 +142,24 @@ class HomeFragment : Fragment() {
         // Veri akışları
         viewLifecycleOwner.lifecycleScope.launch {
             viewModel.popularBooks.collectLatest { books ->
-                popularAdapter.updateBooks(books)
+                popularAdapter.updateBooks(books, favoritesViewModel.favoriteStatusMap.value ?: emptyMap())
             }
         }
 
         viewLifecycleOwner.lifecycleScope.launch {
             viewModel.newBooks.collectLatest { books ->
-                newBooksAdapter.updateBooks(books)
+                newBooksAdapter.updateBooks(books, favoritesViewModel.favoriteStatusMap.value ?: emptyMap())
             }
         }
 
         viewLifecycleOwner.lifecycleScope.launch {
             viewModel.popularRomanById.collectLatest { books ->
-                popularRomanAdapter.updateBooks(books)
+                popularRomanAdapter.updateBooks(books, favoritesViewModel.favoriteStatusMap.value ?: emptyMap())
             }
         }
 
         viewModel.fetchAllBooks()
+        favoritesViewModel.loadFavoriteBooks() // Uygulama açıldığında favori durumunu yükle
     }
 
     private fun performSearch() {
