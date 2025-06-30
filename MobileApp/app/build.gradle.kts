@@ -13,6 +13,7 @@ android {
 
     buildFeatures {
         viewBinding = true
+        dataBinding = true
     }
 
     defaultConfig {
@@ -72,14 +73,15 @@ dependencies {
     implementation("com.github.bumptech.glide:glide:4.15.1")
     kapt("com.github.bumptech.glide:compiler:4.15.1")
 
-    implementation(platform("com.google.firebase:firebase-bom:33.15.0"))
-    implementation ("com.google.firebase:firebase-analytics:22.4.0")
+    implementation(platform("com.google.firebase:firebase-bom:33.16.0"))
+    implementation ("com.google.firebase:firebase-analytics:22.5.0")
     implementation("com.google.firebase:firebase-auth:23.2.1")
-    implementation ("com.google.firebase:firebase-messaging:24.1.1")
+    implementation ("com.google.firebase:firebase-messaging:24.1.2")
     implementation ("com.google.firebase:firebase-firestore-ktx:25.1.4")
 
     implementation ("com.google.android.material:material:1.12.0")
     implementation ("androidx.drawerlayout:drawerlayout:1.2.0")
+    implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
 
 
 
