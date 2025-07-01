@@ -6,15 +6,26 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.navOptions
 import com.example.kitaponerileriapp.databinding.FragmentRegisterBinding
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
+import com.example.kitaponerileriapp.R
 
 class RegisterFragment : Fragment() {
 
     private var _binding: FragmentRegisterBinding? = null
     private val binding get() = _binding!!
     private lateinit var auth: FirebaseAuth
+
+    private val navOptions = navOptions {
+        anim {
+            enter = R.anim.slide_in_right
+            exit = R.anim.slide_out_left
+            popEnter = R.anim.slide_in_left
+            popExit = R.anim.slide_out_right
+        }
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -50,7 +61,10 @@ class RegisterFragment : Fragment() {
                             if (verifyTask.isSuccessful) {
                                 Snackbar.make(requireView(), "Doğrulama maili gönderildi. Lütfen spam kutunuzu da kontrol edin!", Snackbar.LENGTH_LONG).show()
 
-                                findNavController().navigate(RegisterFragmentDirections.actionRegisterFragmentToLoginFragment())
+                                findNavController().navigate(
+                                    RegisterFragmentDirections.actionRegisterFragmentToLoginFragment(),
+                                    navOptions
+                                )
                             } else {
                                 Snackbar.make(requireView(), "Doğrulama maili gönderilemedi: ${verifyTask.exception?.message}", Snackbar.LENGTH_LONG).show()
                             }
@@ -62,7 +76,10 @@ class RegisterFragment : Fragment() {
         }
 
         binding.goToLoginText.setOnClickListener {
-            findNavController().navigate(RegisterFragmentDirections.actionRegisterFragmentToLoginFragment())
+            findNavController().navigate(
+                RegisterFragmentDirections.actionRegisterFragmentToLoginFragment(),
+                navOptions
+            )
         }
     }
 
