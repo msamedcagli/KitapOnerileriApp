@@ -1,5 +1,6 @@
 package com.example.kitaponerileriapp
 
+import androidx.navigation.navOptions
 import android.Manifest
 import android.content.pm.PackageManager
 import android.os.Build
@@ -26,8 +27,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     private lateinit var navView: NavigationView
     private lateinit var auth: FirebaseAuth
 
-    private val requestPermissionLauncher =
-        registerForActivityResult(ActivityResultContracts.RequestPermission()) { isGranted: Boolean ->
+    private val requestPermissionLauncher = registerForActivityResult(ActivityResultContracts.RequestPermission()) { isGranted: Boolean ->
             if (isGranted) {
                 Toast.makeText(this, "Bildirimlere izin verildi.", Toast.LENGTH_SHORT).show()
             } else {
@@ -113,9 +113,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.id.nav_favorites -> {
                 if (navController.currentDestination?.id == R.id.homeFragment) {
                     navController.navigate(R.id.action_homeFragment_to_favoritesFragment)
-                } else {
-                    // İstersen burada global action ekleyip kullanabilirsin
-                    Toast.makeText(this, "Lütfen ana sayfadan geçiş yapın.", Toast.LENGTH_SHORT).show()
                 }
                 drawerLayout.closeDrawer(GravityCompat.START)
                 return true
@@ -123,8 +120,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.id.timer -> {
                 if (navController.currentDestination?.id == R.id.homeFragment) {
                     navController.navigate(R.id.action_homeFragment_to_timerFragment)
-                } else {
-                    Toast.makeText(this, "Lütfen ana sayfadan geçiş yapın.", Toast.LENGTH_SHORT).show()
                 }
                 drawerLayout.closeDrawer(GravityCompat.START)
                 return true
@@ -132,11 +127,21 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.id.nav_logout -> {
                 auth.signOut()
                 Toast.makeText(this, "Çıkış yapıldı", Toast.LENGTH_SHORT).show()
-                if (navController.currentDestination?.id == R.id.homeFragment) {
-                    navController.navigate(R.id.action_homeFragment_to_loginFragment)
-                } else {
-                    navController.navigate(R.id.loginFragment)
+
+                val navOptions = navOptions {
+                    anim {
+                        enter = R.anim.slide_in_left
+                        exit = R.anim.slide_out_right
+                        popEnter = R.anim.slide_in_left
+                        popExit = R.anim.slide_out_right
+                    }
+                    popUpTo(R.id.loginFragment) {
+                        inclusive = true
+                    }
                 }
+
+                navController.navigate(R.id.loginFragment, null, navOptions)
+
                 drawerLayout.closeDrawer(GravityCompat.START)
                 return true
             }
