@@ -31,13 +31,7 @@
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right" />
-        <action
-            android:id="@+id/action_homeFragment_to_loginFragment"
-            app:destination="@id/loginFragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right" />
+
         <action
             android:id="@+id/action_homeFragment_to_timerFragment"
             app:destination="@+id/timerFragment"
@@ -138,13 +132,6 @@
         android:name="com.example.kitaponerileriapp.ui.FavoritesFragment"
         android:label="FavoritesFragment"
         tools:layout="@layout/fragment_favorites" >
-        <action
-            android:id="@+id/action_favoritesFragment_to_homeFragment"
-            app:destination="@id/homeFragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
 
     <fragment
@@ -152,12 +139,6 @@
         android:name="com.example.kitaponerileriapp.ui.TimerFragment"
         android:label="fragment_timer"
         tools:layout="@layout/fragment_timer" >
-        <action
-            android:id="@+id/action_timerFragment_to_homeFragment"
-            app:destination="@id/homeFragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right" />
+
     </fragment>
 </navigation>
