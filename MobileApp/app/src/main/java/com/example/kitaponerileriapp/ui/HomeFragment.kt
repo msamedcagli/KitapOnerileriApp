@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.inputmethod.EditorInfo
 import android.widget.Toast
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
@@ -13,16 +12,14 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.navOptions
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.kitaponerileriapp.MainActivity
 import com.example.kitaponerileriapp.adapter.BookAdapter
 import com.example.kitaponerileriapp.databinding.FragmentHomeBinding
-import com.example.kitaponerileriapp.ui.BookDetailBottomSheet
-import com.example.kitaponerileriapp.ui.RecommendationFragment
 import com.example.kitaponerileriapp.viewmodel.HomeViewModel
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
-
 
 import com.example.kitaponerileriapp.viewmodel.FavoritesViewModel
 
@@ -38,11 +35,17 @@ class HomeFragment : Fragment() {
     private lateinit var newBooksAdapter: BookAdapter
     private lateinit var popularRomanAdapter: BookAdapter
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?,
-    ): View {
+    // Animasyonlu navOptions tanımı
+    private val navOptionsWithAnim = navOptions {
+        anim {
+            enter = R.anim.slide_in_right
+            exit = R.anim.slide_out_left
+            popEnter = R.anim.slide_in_left
+            popExit = R.anim.slide_out_right
+        }
+    }
+
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?, ): View {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -166,7 +169,7 @@ class HomeFragment : Fragment() {
         val query = binding.searchEditText.text.toString().trim()
         if (query.isNotEmpty()) {
             val action = HomeFragmentDirections.actionHomeFragmentToSearchResultsFragment(query)
-            findNavController().navigate(action)
+            findNavController().navigate(action, navOptionsWithAnim)
         } else {
             Toast.makeText(requireContext(), "Lütfen bir kitap ismi girin.", Toast.LENGTH_SHORT).show()
         }
