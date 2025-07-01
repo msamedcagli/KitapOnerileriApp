@@ -7,14 +7,25 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.navOptions
 import com.example.kitaponerileriapp.databinding.FragmentLoginBinding
 import com.google.firebase.auth.FirebaseAuth
+import com.example.kitaponerileriapp.R
 
 class LoginFragment : Fragment() {
 
     private var _binding: FragmentLoginBinding? = null
     private val binding get() = _binding!!
     private lateinit var auth: FirebaseAuth
+
+    private val navOptions = navOptions {
+        anim {
+            enter = R.anim.slide_in_right
+            exit = R.anim.slide_out_left
+            popEnter = R.anim.slide_in_left
+            popExit = R.anim.slide_out_right
+        }
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -43,7 +54,12 @@ class LoginFragment : Fragment() {
                     if (task.isSuccessful) {
                         val user = auth.currentUser
                         if (user != null && user.isEmailVerified) {
-                            findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToHomeFragment())
+                            if (findNavController().currentDestination?.id == R.id.loginFragment) {
+                                findNavController().navigate(
+                                    LoginFragmentDirections.actionLoginFragmentToHomeFragment(),
+                                    navOptions
+                                )
+                            }
                         } else {
                             Toast.makeText(requireContext(), "Lütfen önce e-posta adresinizi doğrulayın.", Toast.LENGTH_LONG).show()
                             auth.signOut()
@@ -56,12 +72,18 @@ class LoginFragment : Fragment() {
 
         // Kayıt ol sayfasına yönlendirme
         binding.goToRegisterText.setOnClickListener {
-            findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToRegisterFragment())
+            findNavController().navigate(
+                LoginFragmentDirections.actionLoginFragmentToRegisterFragment(),
+                navOptions
+            )
         }
 
         // Şifremi unuttum sayfasına yönlendirme
         binding.forgotPasswordText.setOnClickListener {
-            findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToForgotPasswordFragment())
+            findNavController().navigate(
+                LoginFragmentDirections.actionLoginFragmentToForgotPasswordFragment(),
+                navOptions
+            )
         }
     }
 
