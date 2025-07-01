@@ -9,6 +9,8 @@ import androidx.navigation.fragment.findNavController
 import com.example.kitaponerileriapp.databinding.FragmentForgotPasswordBinding
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
+import androidx.navigation.navOptions
+import com.example.kitaponerileriapp.R
 
 class ForgotPasswordFragment : Fragment() {
 
@@ -50,7 +52,18 @@ class ForgotPasswordFragment : Fragment() {
 
         // Giriş ekranına dönüş
         binding.backToLoginText.setOnClickListener {
-            findNavController().navigate(ForgotPasswordFragmentDirections.actionForgotPasswordFragmentToLoginFragment())
+            val navOptions = navOptions {
+                anim {
+                    enter = R.anim.slide_in_right
+                    exit = R.anim.slide_out_left
+                    popEnter = R.anim.slide_in_left
+                    popExit = R.anim.slide_out_right
+                }
+            }
+            findNavController().navigate(
+                ForgotPasswordFragmentDirections.actionForgotPasswordFragmentToLoginFragment(),
+                navOptions
+            )
         }
     }
 
