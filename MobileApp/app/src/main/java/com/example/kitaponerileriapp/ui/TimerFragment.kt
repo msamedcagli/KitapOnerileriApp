@@ -26,6 +26,7 @@ import com.example.kitaponerileriapp.notification.NotificationReceiver
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import java.util.Calendar
+import androidx.navigation.navOptions
 
 class TimerFragment : Fragment() {
 
@@ -75,10 +76,19 @@ class TimerFragment : Fragment() {
             setReminder()
         }
 
-        binding.buttonBack.setOnClickListener {
-            findNavController().navigate(R.id.action_timerFragment_to_homeFragment)
+        val navOptions = navOptions {
+            anim {
+                enter = R.anim.slide_in_left
+                exit = R.anim.slide_out_right
+                popEnter = R.anim.slide_in_left
+                popExit = R.anim.slide_out_right
+            }
         }
 
+        binding.buttonBack.setOnClickListener {
+            findNavController().navigateUp()  // Normal geri git
+            requireActivity().overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
+        }
     }
 
     private fun setupRecyclerView() {
@@ -263,4 +273,3 @@ class TimerFragment : Fragment() {
         _binding = null
     }
 }
-
