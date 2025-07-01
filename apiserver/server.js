@@ -4,12 +4,11 @@ const fs = require('fs');
 const path = require('path');
 
 const app = express();
-const port = 3000;
+const port = 80;
 
 app.use(cors());
-app.use(express.static(path.join(__dirname)));
-app.use('/bookimages', express.static(path.join(__dirname, 'bookimages')));
 
+// API rotaları - En spesifik rotalar en üste
 function kitaplariOku() {
   const dosyaYolu = path.join(__dirname, 'data', 'books.json');
   const veri = fs.readFileSync(dosyaYolu, 'utf-8');
@@ -49,6 +48,15 @@ app.get('/api/kitaplar/:id', (req, res) => {
   }
 });
 
-app.listen(port, () => {
+// Statik dosyaları sun - API rotalarından sonra
+app.use(express.static(path.join(__dirname, 'client', 'build')));
+app.use('/bookimages', express.static(path.join(__dirname, 'bookimages')));
+
+app.listen(port, '0.0.0.0', () => {
   console.log(`Sunucu http://localhost:${port} adresinde çalışıyor.`);
+});
+
+// React uygulaması için tüm yolları index.html'e yönlendir
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
 });
