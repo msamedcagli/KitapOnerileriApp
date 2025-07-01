@@ -10,15 +10,16 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
+import androidx.navigation.navOptions
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.kitaponerileriapp.adapter.BookAdapter
 import com.example.kitaponerileriapp.databinding.FragmentSearchResultsBinding
 import com.example.kitaponerileriapp.network.BookRepository
 import com.example.kitaponerileriapp.network.RetrofitClient
 import kotlinx.coroutines.launch
-
 import androidx.fragment.app.viewModels
 import com.example.kitaponerileriapp.viewmodel.FavoritesViewModel
+import com.example.kitaponerileriapp.R
 
 class SearchResultsFragment : Fragment() {
 
@@ -30,6 +31,15 @@ class SearchResultsFragment : Fragment() {
     private val favoritesViewModel: FavoritesViewModel by viewModels()
 
     private val args: SearchResultsFragmentArgs by navArgs()
+
+    private val navOptions = navOptions {
+        anim {
+            enter = R.anim.slide_in_right
+            exit = R.anim.slide_out_left
+            popEnter = R.anim.slide_in_left
+            popExit = R.anim.slide_out_right
+        }
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -47,7 +57,6 @@ class SearchResultsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // SwipeRefreshLayout dinleyicisi
         binding.searchResultsSwipeRefreshLayout.setOnRefreshListener {
             val searchQuery = args.query.trim()
             fetchSearchResults(searchQuery)
@@ -56,7 +65,7 @@ class SearchResultsFragment : Fragment() {
 
         adapter = BookAdapter(emptyList(), { selectedBook ->
             val action = SearchResultsFragmentDirections.actionSearchResultsFragmentToBookDetailBottomSheet(selectedBook)
-            findNavController().navigate(action)
+            findNavController().navigate(action, navOptions)
         }, favoritesViewModel)
 
         favoritesViewModel.favoriteStatusMap.observe(viewLifecycleOwner) {
@@ -80,7 +89,6 @@ class SearchResultsFragment : Fragment() {
         val searchQuery = args.query.trim()
         fetchSearchResults(searchQuery)
     }
-
 
     private fun normalizeString(input: String): String {
         return input.lowercase()
@@ -116,7 +124,6 @@ class SearchResultsFragment : Fragment() {
                 }
                 binding.resultsearchResultsRecyclerView.visibility = View.VISIBLE
 
-                // Ensure favorite status is loaded before updating adapter
                 favoritesViewModel.loadFavoriteBooks()
                 adapter.updateBooks(filteredBooks, favoritesViewModel.favoriteStatusMap.value ?: emptyMap())
             } catch (e: Exception) {
