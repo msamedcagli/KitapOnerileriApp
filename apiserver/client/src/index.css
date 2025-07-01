@@ -1,0 +1,940 @@
+/* Genel Stil */
+body {
+  margin: 0;
+  font-family: 'Merriweather', serif; /* Daha klasik bir font */
+  background-color: #F5F5DC; /* Krem rengi arka plan */
+  color: #4A3F35; /* Koyu kahverengi metin */
+  line-height: 1.7;
+  overflow-x: hidden;
+  padding-top: 80px; /* Navbar yüksekliği kadar boşluk */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #8B4513; /* Koyu kahverengi */
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-bottom: 2px solid #A0522D;
+  position: fixed; /* Sabit konum */
+  top: 0;
+  width: 100%;
+  z-index: 100; /* Diğer içeriklerin üzerinde kalması için */
+  height: 80px; /* Navbar yüksekliğini sabitle */
+  box-sizing: border-box; /* Padding dahil yüksekliği hesapla */
+}
+
+.navbar-brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  color: #FFF8DC; /* Krem rengi */
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-button {
+  background-color: #A0522D; /* Orta kahverengi */
+  color: #FFF8DC;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-button:hover {
+  background-color: #CD853F; /* Daha açık kahverengi */
+  transform: translateY(-2px);
+}
+
+/* Kitaplık Bölümü */
+.books-grid-section {
+  /* background-color: #FFF8DC; */ /* Kaldırıldı */
+  /* border-radius: 18px; */ /* Kaldırıldı */
+  padding: 0; /* Padding kaldırıldı */
+  margin-top: 40px; /* Navbar'dan sonra boşluk */
+  margin-bottom: 50px;
+  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); */ /* Kaldırıldı */
+  /* border: 1px solid #DEB887; */ /* Kaldırıldı */
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  margin-bottom: 35px;
+  color: #8B4513; /* Koyu kahverengi */
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  border-bottom: 2px solid #DEB887;
+  padding-bottom: 18px;
+}
+
+.section-title i {
+  color: #A0522D;
+}
+
+/* Kitap Grid */
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* 5 kitap sığacak şekilde ayarlandı */
+  gap: 20px; /* Boşluk azaltıldı */
+  padding: 20px 0;
+}
+
+/* Kitap Kartı */
+.book-card {
+  background-color: #FDF5E6; /* Daha açık krem */
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  cursor: pointer;
+  border: 1px solid #DEB887; /* Daha ince kenarlık */
+  height: 360px; /* Yükseklik azaltıldı */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Daha hafif gölge */
+}
+
+.book-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 40px rgba(139, 69, 19, 0.2); /* Daha hafif gölge */
+  border-color: #A0522D;
+}
+
+.book-image {
+  width: 100%;
+  height: 220px; /* Resim yüksekliği azaltıldı */
+  object-fit: cover;
+  background-color: #DEB887; /* Açık kahverengi */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8B4513;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.book-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.book-info {
+  padding: 10px; /* Dolgu azaltıldı */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #FDF5E6;
+}
+
+.book-title {
+  font-weight: bold;
+  font-size: 1rem; /* Font boyutu azaltıldı */
+  color: #8B4513;
+  line-height: 1.3;
+  margin-bottom: 6px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.book-author {
+  font-size: 0.85rem; /* Font boyutu azaltıldı */
+  color: #A0522D;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.book-category {
+  background-color: #A0522D;
+  color: #FFF8DC;
+  padding: 3px 8px; /* Dolgu azaltıldı */
+  border-radius: 18px;
+  font-size: 0.75rem; /* Font boyutu azaltıldı */
+  font-weight: 600;
+  display: inline-block;
+  align-self: flex-start;
+  box-shadow: 0 2px 8px rgba(160, 82, 45, 0.3);
+}
+
+/* Sabit Kitap Öneri Butonu */
+.fixed-recommend-btn {
+  position: fixed;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(90deg, #A0522D, #CD853F); /* Kahverengi-turuncu geçiş */
+  color: #FFF8DC;
+  border: none;
+  padding: 20px 65px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 12px 35px rgba(160, 82, 45, 0.4);
+  z-index: 100;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  border: 2px solid #DEB887;
+}
+
+.fixed-recommend-btn:hover {
+  background: linear-gradient(90deg, #CD853F, #A0522D);
+  transform: translateX(-50%) translateY(-7px);
+  box-shadow: 0 18px 50px rgba(160, 82, 45, 0.6);
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(12px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #FFF8DC; /* Krem rengi */
+  padding: 35px;
+  border-radius: 18px;
+  width: 90%;
+  max-width: 700px;
+  position: relative;
+  animation: modalFadeIn 0.4s ease-out;
+  max-height: 90vh;
+  overflow-y: auto;
+  border: 1px solid #DEB887;
+  box-shadow: 0 18px 55px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-60px) scale(0.85);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  font-size: 36px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #8B4513;
+  background: none;
+  border: none;
+  padding: 5px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.close:hover {
+  background: #DEB887;
+  color: #8B4513;
+  transform: rotate(90deg);
+}
+
+/* Kitap Detay Modal */
+.book-detail-modal .modal-content {
+  max-width: 650px;
+}
+
+.book-detail-header {
+  display: flex;
+  gap: 35px;
+  margin-bottom: 30px;
+  align-items: flex-start;
+}
+
+.book-detail-image {
+  width: 200px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  flex-shrink: 0;
+  border: 1px solid #A0522D;
+}
+
+.book-detail-info h2 {
+  font-family: 'Playfair Display', serif;
+  color: #8B4513;
+  margin-bottom: 15px;
+  font-size: 2.2rem;
+  line-height: 1.3;
+}
+
+.book-detail-info p {
+  color: #A0522D;
+  margin-bottom: 10px;
+  font-size: 1.15rem;
+}
+
+.book-detail-summary {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid #DEB887;
+}
+
+.book-detail-summary h3 {
+  font-family: 'Playfair Display', serif;
+  color: #8B4513;
+  margin-bottom: 18px;
+  font-size: 1.6rem;
+}
+
+.book-detail-summary p {
+  color: #4A3F35;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* Öneri Modalı */
+.recommendation-modal .modal-content {
+  max-width: 600px;
+}
+
+.modal h2 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 30px;
+  color: #8B4513;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-size: 2.5rem;
+}
+
+.category-select {
+  width: 100%;
+  padding: 18px;
+  border: 1px solid #DEB887;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  background-color: #FDF5E6;
+  color: #4A3F35;
+  appearance: none;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%234A3F35%22%20d%3D%22M287%2C197.3L159.3%2C69.7c-4.7-4.7-12.3-4.7-17%2C0L5.4%2C197.3c-4.7%2C4.7-4.7%2C12.3%2C0%2C17l19.7%2C19.7c4.7%2C4.7%2C12.3%2C4.7%2C17%2C0L146.7%2C138.7c4.7-4.7%2C12.3-4.7%2C17%2C0l104.7%2C104.7c4.7%2C4.7%2C12.3%2C4.7%2C17%2C0l19.7-19.7C291.7%2C209.6%2C291.7%2C202%2C287%2C197.3z%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-position: right 20px top 50%;
+  background-size: 15px auto;
+}
+
+.category-select:focus {
+  outline: none;
+  border-color: #A0522D;
+  box-shadow: 0 0 0 4px rgba(160, 82, 45, 0.2);
+}
+
+.get-recommendation-btn {
+  width: 100%;
+  background: linear-gradient(90deg, #A0522D, #CD853F);
+  color: #FFF8DC;
+  border: none;
+  padding: 18px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 25px;
+  box-shadow: 0 6px 18px rgba(160, 82, 45, 0.3);
+}
+
+.get-recommendation-btn:hover {
+  background: linear-gradient(90deg, #CD853F, #A0522D);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(160, 82, 45, 0.5);
+}
+
+/* Önerilen Kitap Gösterimi */
+.recommended-book {
+  background-color: #FDF5E6;
+  border-radius: 18px;
+  padding: 30px;
+  text-align: center;
+  border: 1px solid #DEB887;
+  animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.recommended-book img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border: 1px solid #A0522D;
+}
+
+.recommended-book h3 {
+  font-family: 'Playfair Display', serif;
+  color: #8B4513;
+  margin-bottom: 18px;
+  font-size: 1.8rem;
+}
+
+.recommended-book p {
+  color: #4A3F35;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+/* Yükleniyor ve Hata Mesajları */
+.loading,
+.error {
+  text-align: center;
+  padding: 50px;
+  font-size: 1.3rem;
+}
+
+.loading {
+  color: #A0522D;
+}
+
+.loading i {
+  animation: spin 1s linear infinite;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  display: block;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.error {
+  color: #DC143C;
+}
+
+/* Reklam Modalı */
+#promoModal .modal-content {
+  max-width: 650px;
+  min-width: 350px;
+  text-align: center;
+  padding: 50px 35px 45px 35px;
+}
+
+#promoModal h2 {
+  font-family: 'Playfair Display', serif;
+  color: #8B4513;
+  margin-bottom: 35px;
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+#googlePlayBtn {
+  display: inline-block;
+  background: linear-gradient(90deg, #388e3c 0%, #4caf50 100%);
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 25px 85px;
+  border-radius: 55px;
+  box-shadow: 0 10px 35px rgba(56, 142, 60, 0.2);
+  text-decoration: none;
+  margin-bottom: 12px;
+  transition: background 0.2s, transform 0.2s;
+  letter-spacing: 0.6px;
+}
+
+#googlePlayBtn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 45px rgba(56, 142, 60, 0.4);
+}
+
+#googlePlayBtn .fab {
+  margin-right: 18px;
+  font-size: 2.2rem;
+  vertical-align: middle;
+}
+
+/* Öne Çıkan Kitap Bölümü */
+.featured-book-section {
+  /* background-color: #FFF8DC; */ /* Kaldırıldı */
+  /* border-radius: 18px; */ /* Kaldırıldı */
+  padding: 0; /* Padding kaldırıldı */
+  margin-bottom: 50px;
+  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); */ /* Kaldırıldı */
+  /* border: 1px solid #DEB887; */ /* Kaldırıldı */
+}
+
+.featured-book-carousel {
+  position: relative;
+  width: 100%;
+  height: 550px; /* Carousel yüksekliği artırıldı */
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.featured-book-carousel-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.featured-book-carousel-item.active {
+  opacity: 1;
+}
+
+.featured-book-card {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  background-color: #FDF5E6; /* Daha açık krem */
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+  cursor: pointer;
+  border: 1px solid #DEB887;
+  padding: 25px;
+  width: 90%; /* Kartın genişliği */
+  max-width: 800px; /* Maksimum genişlik */
+  height: auto; /* Yüksekliği otomatik yap */
+  min-height: 480px; /* Minimum yükseklik artırıldı */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Daha hafif gölge */
+}
+
+.featured-book-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 50px rgba(139, 69, 19, 0.4);
+  border-color: #A0522D;
+}
+
+.featured-book-image {
+  flex-shrink: 0;
+  width: 220px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border: 1px solid #A0522D;
+}
+
+.featured-book-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.featured-book-info {
+  flex-grow: 1;
+}
+
+.featured-book-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #8B4513;
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.featured-book-author {
+  font-size: 1.3rem;
+  color: #A0522D;
+  margin-bottom: 18px;
+}
+
+.featured-book-category {
+  background-color: #A0522D;
+  color: #FFF8DC;
+  padding: 6px 18px;
+  border-radius: 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 18px;
+  box-shadow: 0 3px 12px rgba(160, 82, 45, 0.3);
+}
+
+.featured-book-summary {
+  font-size: 1.1rem;
+  color: #4A3F35;
+  line-height: 1.8;
+  text-align: justify;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5; /* Açıklama için satır sınırı */
+  -webkit-box-orient: vertical;
+}
+
+/* Kategori Filtresi */
+.category-filter-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.category-filter-container label {
+  font-size: 1.2rem;
+  color: #8B4513;
+  font-weight: bold;
+}
+
+.category-filter-select {
+  padding: 10px 15px;
+  border: 1px solid #DEB887;
+  border-radius: 8px;
+  background-color: #FDF5E6;
+  color: #4A3F35;
+  font-size: 1.1rem;
+  appearance: none;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%234A3F35%22%20d%3D%22M287%2C197.3L159.3%2C69.7c-4.7-4.7-12.3-4.7-17%2C0L5.4%2C197.3c-4.7%2C4.7-4.7%2C12.3%2C0%2C17l19.7%2C19.7c4.7%2C4.7%2C12.3%2C4.7%2C17%2C0L146.7%2C138.7c4.7-4.7%2C12.3-4.7%2C17%2C0l104.7%2C104.7c4.7%2C4.7%2C12.3%2C4.7%2C17%2C0l19.7-19.7C291.7%2C209.6%2C291.7%2C202%2C287%2C197.3z%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-position: right 15px top 50%;
+  background-size: 12px auto;
+}
+
+.category-select:focus {
+  outline: none;
+  border-color: #A0522D;
+  box-shadow: 0 0 0 3px rgba(160, 82, 45, 0.2);
+}
+
+/* Responsive Tasarım */
+.mobile-view {
+  display: none;
+}
+
+.desktop-view {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .mobile-view {
+    display: block;
+  }
+
+  .desktop-view {
+    display: none;
+  }
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 55px; /* Navbar yüksekliği kadar boşluk */
+  }
+
+  .navbar {
+    flex-direction: row; /* Mobil görünümde yatay kalabilir */
+    justify-content: space-between;
+    padding: 10px 15px;
+    height: 55px; /* Daha kompakt navbar yüksekliği */
+  }
+  .navbar-brand {
+    font-size: 1.6rem;
+  }
+  .nav-links {
+    display: none; /* Mobil menü için hamburger ikonu düşünülebilir */
+  }
+  .nav-button {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+  .container {
+    padding: 15px;
+  }
+  .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    gap: 8px;
+    padding-bottom: 8px;
+  }
+  .books-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: start;
+    gap: 12px;
+    padding: 10px 5px;
+    border: none;
+    background: none;
+  }
+  .book-card {
+    width: 95% !important;
+    max-width: 400px;
+    height: auto !important;
+    min-height: 300px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+  }
+  .book-image {
+    width: 100% !important;
+    min-height: 160px;
+    height: auto;
+    object-fit: cover;
+    max-width: 100%;
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+    display: block;
+  }
+  .book-info {
+    padding: 8px;
+    overflow: hidden;
+  }
+  .book-title {
+    font-size: 0.9rem;
+    -webkit-line-clamp: 2;
+  }
+  .book-author {
+    font-size: 0.75rem;
+  }
+  .book-category {
+    font-size: 0.7rem;
+    padding: 3px 6px;
+  }
+  .modal-content {
+    margin: 5% auto;
+    width: 95%;
+    padding: 18px;
+  }
+  .book-detail-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 18px;
+  }
+  .book-detail-image {
+    width: 140px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  .book-detail-info h2 {
+    font-size: 1.6rem;
+  }
+  .book-detail-info p {
+    font-size: 0.9rem;
+  }
+  .book-detail-summary h3 {
+    font-size: 1.3rem;
+  }
+  .book-detail-summary p {
+    font-size: 0.9rem;
+  }
+  .fixed-recommend-btn {
+    bottom: 18px;
+    padding: 12px 35px;
+    font-size: 0.95rem;
+    gap: 8px;
+  }
+  .featured-book-carousel {
+    height: 400px; /* Carousel yüksekliği azaltıldı */
+  }
+  .featured-book-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 18px;
+    min-height: 380px; /* Mobil görünümde de yeterli yükseklik */
+    padding: 18px;
+  }
+  .featured-book-image {
+    width: 140px;
+    height: 200px;
+  }
+  .featured-book-title {
+    font-size: 1.6rem;
+  }
+  .featured-book-author {
+    font-size: 0.95rem;
+  }
+  .featured-book-category {
+    font-size: 0.7rem;
+    padding: 3px 8px;
+  }
+  .featured-book-summary {
+    font-size: 0.85rem;
+    -webkit-line-clamp: 4; /* Açıklama için satır sınırı azaltıldı */
+  }
+  .modal h2 {
+    font-size: 1.8rem;
+    margin-bottom: 18px;
+  }
+  .category-select, .get-recommendation-btn {
+    padding: 12px;
+    font-size: 1rem;
+  }
+  #googlePlayBtn {
+    font-size: 1.3rem;
+    padding: 18px 50px;
+  }
+  #googlePlayBtn .fab {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding-top: 50px;
+  }
+  .navbar {
+    padding: 8px 10px;
+    height: 50px;
+  }
+  .navbar-brand {
+    font-size: 1.4rem;
+  }
+  .nav-button {
+    padding: 5px 10px;
+    font-size: 0.85rem;
+  }
+  .container {
+    padding: 10px;
+  }
+  .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  .books-grid {
+    display: grid !important;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 8px;
+    border: none !important;
+    background: none !important;
+  }
+  .book-card {
+    width: 100% !important;
+    height: 260px;
+  }
+  .book-image {
+    height: 140px;
+  }
+  .book-title {
+    font-size: 0.75rem;
+  }
+  .book-author {
+    font-size: 0.65rem;
+  }
+  .book-category {
+    font-size: 0.55rem;
+    padding: 1px 4px;
+  }
+  .modal-content {
+    padding: 15px;
+  }
+  .book-detail-image {
+    width: 110px;
+    height: 160px;
+  }
+  .book-detail-info h2 {
+    font-size: 1.4rem;
+  }
+  .book-detail-info p {
+    font-size: 0.85rem;
+  }
+  .book-detail-summary h3 {
+    font-size: 1.1rem;
+  }
+  .book-detail-summary p {
+    font-size: 0.85rem;
+  }
+  .fixed-recommend-btn {
+    bottom: 15px;
+    padding: 10px 25px;
+    font-size: 0.85rem;
+    gap: 6px;
+  }
+  .featured-book-carousel {
+    height: 350px;
+  }
+  .featured-book-card {
+    min-height: 320px;
+    padding: 15px;
+  }
+  .featured-book-image {
+    width: 110px;
+    height: 160px;
+  }
+  .featured-book-title {
+    font-size: 1.4rem;
+  }
+  .featured-book-author {
+    font-size: 0.85rem;
+  }
+  .featured-book-category {
+    font-size: 0.65rem;
+    padding: 2px 6px;
+  }
+  .featured-book-summary {
+    font-size: 0.8rem;
+    -webkit-line-clamp: 3;
+  }
+  .modal h2 {
+    font-size: 1.6rem;
+  }
+  .category-select, .get-recommendation-btn {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+  #googlePlayBtn {
+    font-size: 1.1rem;
+    padding: 12px 35px;
+  }
+  #googlePlayBtn .fab {
+    font-size: 1.4rem;
+  }
+}
+}
