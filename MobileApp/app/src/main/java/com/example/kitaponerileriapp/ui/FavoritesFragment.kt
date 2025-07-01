@@ -12,7 +12,7 @@ import com.example.kitaponerileriapp.adapter.BookAdapter
 import com.example.kitaponerileriapp.databinding.FragmentFavoritesBinding
 import com.example.kitaponerileriapp.viewmodel.FavoritesViewModel
 import com.example.kitaponerileriapp.R
-
+import androidx.navigation.navOptions
 
 class FavoritesFragment : Fragment() {
 
@@ -44,10 +44,20 @@ class FavoritesFragment : Fragment() {
 
         favoritesViewModel.loadFavoriteBooks()
 
-        binding.favoritesBackButton.setOnClickListener {
-            findNavController().navigate(R.id.action_favoritesFragment_to_homeFragment)
+        val navOptions = navOptions {
+            anim {
+                enter = R.anim.slide_in_right
+                exit = R.anim.slide_out_left
+                popEnter = R.anim.slide_in_right
+                popExit = R.anim.slide_out_left
+            }
         }
 
+        binding.favoritesBackButton.setOnClickListener {
+            // Animasyonlu navigateUp için önce geri git, sonra activity animasyonu uygula
+            findNavController().navigateUp()
+            requireActivity().overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
+        }
     }
 
     private fun setupRecyclerView() {
@@ -79,7 +89,6 @@ class FavoritesFragment : Fragment() {
             bookAdapter.updateBooks(favoritesViewModel.favoriteBooks.value ?: emptyList(), it)
         }
 
-        // Favoriler sayfasında favori durumu değiştiğinde listeyi yeniden yükle
         favoritesViewModel.favoriteStatusMap.observe(viewLifecycleOwner) {
             favoritesViewModel.loadFavoriteBooks()
         }
