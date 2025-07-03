@@ -1,10 +1,11 @@
 package com.example.kitaponerileriapp.ui
 
-import com.example.kitaponerileriapp.R
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.content.Context
+import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
@@ -14,14 +15,15 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.navOptions
 import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.kitaponerileriapp.MainActivity
+import com.example.kitaponerileriapp.R
 import com.example.kitaponerileriapp.adapter.BookAdapter
 import com.example.kitaponerileriapp.databinding.FragmentHomeBinding
+import com.example.kitaponerileriapp.viewmodel.FavoritesViewModel
 import com.example.kitaponerileriapp.viewmodel.HomeViewModel
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
-
-import com.example.kitaponerileriapp.viewmodel.FavoritesViewModel
 
 class HomeFragment : Fragment() {
 
@@ -35,6 +37,10 @@ class HomeFragment : Fragment() {
     private lateinit var newBooksAdapter: BookAdapter
     private lateinit var popularRomanAdapter: BookAdapter
 
+    // 1. RecycledViewPool oluşturuldu. Bu, farklı RecyclerView'ler arasında
+    // ViewHolder'ların (görünümlerin) paylaşılmasını sağlar, bu da performansı artırır.
+    private val viewPool = RecyclerView.RecycledViewPool()
+
     // Animasyonlu navOptions tanımı
     private val navOptionsWithAnim = navOptions {
         anim {
@@ -45,84 +51,81 @@ class HomeFragment : Fragment() {
         }
     }
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?, ): View {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onResume() {
         super.onResume()
-        favoritesViewModel.loadFavoriteBooks() // Fragment tekrar görünür olduğunda favori durumunu yenile
+        favoritesViewModel.loadFavoriteBooks()
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // SwipeRefreshLayout dinleyicisi
         binding.homeSwipeRefreshLayout.setOnRefreshListener {
             viewModel.fetchAllBooks()
-            favoritesViewModel.loadFavoriteBooks() // Favori durumunu da yenile
+            favoritesViewModel.loadFavoriteBooks()
             binding.homeSwipeRefreshLayout.isRefreshing = false
         }
 
-        // Menü butonuna tıklanınca drawer'ı aç
         binding.menuButton.setOnClickListener {
             val drawerLayout = (activity as? MainActivity)?.findViewById<DrawerLayout>(R.id.drawer_layout)
             drawerLayout?.openDrawer(GravityCompat.START)
         }
 
-        // Adapter tanımlamaları
-        popularAdapter = BookAdapter(emptyList(), { book ->
+        // 2. Adapter tanımlamaları ListAdapter'a uygun olarak basitleştirildi.
+        popularAdapter = BookAdapter({ book ->
             val bottomSheet = BookDetailBottomSheet().apply {
-                arguments = Bundle().apply {
-                    putParcelable("book", book)
-                }
+                arguments = Bundle().apply { putParcelable("book", book) }
             }
             bottomSheet.show(parentFragmentManager, "BookDetailBottomSheet")
         }, favoritesViewModel)
 
-        newBooksAdapter = BookAdapter(emptyList(), { book ->
+        newBooksAdapter = BookAdapter({ book ->
             val bottomSheet = BookDetailBottomSheet().apply {
-                arguments = Bundle().apply {
-                    putParcelable("book", book)
-                }
+                arguments = Bundle().apply { putParcelable("book", book) }
             }
             bottomSheet.show(parentFragmentManager, "BookDetailBottomSheet")
         }, favoritesViewModel)
 
-        popularRomanAdapter = BookAdapter(emptyList(), { book ->
+        popularRomanAdapter = BookAdapter({ book ->
             val bottomSheet = BookDetailBottomSheet().apply {
-                arguments = Bundle().apply {
-                    putParcelable("book", book)
-                }
+                arguments = Bundle().apply { putParcelable("book", book) }
             }
             bottomSheet.show(parentFragmentManager, "BookDetailBottomSheet")
         }, favoritesViewModel)
 
-        // Favori durumu değişikliklerini dinle ve adaptörleri güncelle
-        favoritesViewModel.favoriteStatusMap.observe(viewLifecycleOwner) {
-            popularAdapter.updateBooks(popularAdapter.books, it)
-            newBooksAdapter.updateBooks(newBooksAdapter.books, it)
-            popularRomanAdapter.updateBooks(popularRomanAdapter.books, it)
+        // 3. Favori durumu değişiklikleri dinlenir ve yeni 'updateFavorites' metodu çağrılır.
+        favoritesViewModel.favoriteStatusMap.observe(viewLifecycleOwner) { statusMap ->
+            popularAdapter.updateFavorites(statusMap)
+            newBooksAdapter.updateFavorites(statusMap)
+            popularRomanAdapter.updateFavorites(statusMap)
         }
 
-        // RecyclerView ayarları
+        // 4. RecyclerView ayarları performans optimizasyonları ile güncellendi.
         binding.popularBooksRecyclerView.apply {
             layoutManager = GridLayoutManager(requireContext(), 1, GridLayoutManager.HORIZONTAL, false)
             adapter = popularAdapter
+            setRecycledViewPool(viewPool) // Paylaşılan havuzu kullan
+            setHasFixedSize(true)       // Performans için boyutun sabit olduğunu belirt
         }
 
         binding.newBooksRecyclerView.apply {
             layoutManager = GridLayoutManager(requireContext(), 1, GridLayoutManager.HORIZONTAL, false)
             adapter = newBooksAdapter
+            setRecycledViewPool(viewPool) // Paylaşılan havuzu kullan
+            setHasFixedSize(true)       // Performans için boyutun sabit olduğunu belirt
         }
 
         binding.popularRomanRecyclerView.apply {
             layoutManager = GridLayoutManager(requireContext(), 1, GridLayoutManager.HORIZONTAL, false)
             adapter = popularRomanAdapter
+            setRecycledViewPool(viewPool) // Paylaşılan havuzu kullan
+            setHasFixedSize(true)       // Performans için boyutun sabit olduğunu belirt
         }
 
-        // Arama işlemi
         binding.searchEditText.setOnEditorActionListener { _, actionId, _ ->
             if (actionId == android.view.inputmethod.EditorInfo.IME_ACTION_SEARCH) {
                 performSearch()
@@ -136,43 +139,52 @@ class HomeFragment : Fragment() {
             performSearch()
         }
 
-        // Kitap öner butonu
         binding.recommendButton.setOnClickListener {
             val bottomSheet = RecommendationFragment()
             bottomSheet.show(parentFragmentManager, "RecommendationBottomSheet")
         }
 
-        // Veri akışları
+        // 5. Veri akışları, verimli 'submitList' metodunu kullanacak şekilde güncellendi.
         viewLifecycleOwner.lifecycleScope.launch {
             viewModel.popularBooks.collectLatest { books ->
-                popularAdapter.updateBooks(books, favoritesViewModel.favoriteStatusMap.value ?: emptyMap())
+                popularAdapter.submitList(books)
             }
         }
 
         viewLifecycleOwner.lifecycleScope.launch {
             viewModel.newBooks.collectLatest { books ->
-                newBooksAdapter.updateBooks(books, favoritesViewModel.favoriteStatusMap.value ?: emptyMap())
+                newBooksAdapter.submitList(books)
             }
         }
 
         viewLifecycleOwner.lifecycleScope.launch {
             viewModel.popularRomanById.collectLatest { books ->
-                popularRomanAdapter.updateBooks(books, favoritesViewModel.favoriteStatusMap.value ?: emptyMap())
+                popularRomanAdapter.submitList(books)
             }
         }
 
         viewModel.fetchAllBooks()
-        favoritesViewModel.loadFavoriteBooks() // Uygulama açıldığında favori durumunu yükle
+        favoritesViewModel.loadFavoriteBooks()
     }
 
     private fun performSearch() {
         val query = binding.searchEditText.text.toString().trim()
         if (query.isNotEmpty()) {
-            val action = HomeFragmentDirections.actionHomeFragmentToSearchResultsFragment(query)
-            findNavController().navigate(action, navOptionsWithAnim)
+            try {
+                val action = HomeFragmentDirections.actionHomeFragmentToSearchResultsFragment(query)
+                findNavController().navigate(action, navOptionsWithAnim)
+            } catch (e: IllegalArgumentException) {
+                Toast.makeText(requireContext(), "Arama sonuçları bulunamadı.", Toast.LENGTH_SHORT).show()
+            }
         } else {
             Toast.makeText(requireContext(), "Lütfen bir kitap ismi girin.", Toast.LENGTH_SHORT).show()
         }
+        hideKeyboard()
+    }
+
+    private fun hideKeyboard() {
+        val imm = context?.getSystemService(Context.INPUT_METHOD_SERVICE) as? InputMethodManager
+        imm?.hideSoftInputFromWindow(view?.windowToken, 0)
     }
 
     override fun onDestroyView() {
