@@ -2,7 +2,7 @@
 
 Bu proje, kullanıcıya özel kitap önerileri sunan, çok katmanlı bir sistemdir. **Amazon EC2** üzerinde çalışan özel bir sunucu, **React** ile geliştirilmiş modern bir web arayüzü ve Firebase servisleriyle entegre edilmiş **Android (Kotlin)** tabanlı bir mobil uygulamadan oluşmaktadır.
 
-Amacımız, kitap keşfini kolaylaştırmak, kullanıcı etkileşimini artırmak ve düzenli okuma alışkanlığını teşvik eden bir dijital deneyim sunmaktır.
+Projenin Amacı, kitap keşfini kolaylaştırmak, kullanıcı etkileşimini artırmak ve düzenli okuma alışkanlığını teşvik eden bir dijital deneyim sunmaktır.
 
 ---
 
@@ -68,5 +68,5 @@ Amacımız, kitap keşfini kolaylaştırmak, kullanıcı etkileşimini artırmak
 
 ## 📸 Ekran Görüntüleri
 
-###Uygulama içi görseller **images** klasöründe bulunmaktadır.
+### Uygulama içi görseller **images** klasöründe bulunmaktadır.
 
