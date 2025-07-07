@@ -7,10 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.kitaponerileriapp.databinding.ItemReminderBinding
 import com.example.kitaponerileriapp.model.Reminder
 
-class ReminderAdapter(
-    private val onEditClick: (Reminder) -> Unit,
-    private val onDeleteClick: (Reminder) -> Unit
-) : RecyclerView.Adapter<ReminderAdapter.ReminderViewHolder>() {
+class ReminderAdapter(private val onEditClick: (Reminder) -> Unit,private val onDeleteClick: (Reminder) -> Unit) : RecyclerView.Adapter<ReminderAdapter.ReminderViewHolder>() {
 
     private var reminders: MutableList<Reminder> = mutableListOf()
 
