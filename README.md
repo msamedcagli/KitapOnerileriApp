@@ -10,11 +10,12 @@ Projenin Amacı, kitap keşfini kolaylaştırmak, kullanıcı etkileşimini art�
 
 ### 🔧 Backend – Amazon EC2 Üzerinde Özel Sunucu
 - **Amazon EC2** üzerinde çalışan özel bir **Node.js** sunucusu kuruldu.
+- **Rate Limit** ile istekler sınırlandı. Server **güvenli** hale getirildi.
 - Kitap verileri burada barındırılır ve istemciler buradan veri çeker.
 - **Express.js** altyapısıyla geliştirilmiş **RESTful API** yapısı oluşturuldu.
 
 ### 🌐 Web Arayüzü – React.js
-- **React** kullanarak modern, bileşen tabanlı bir kullanıcı arayüzü geliştirdik.
+- **React** kullanarak modern, bileşen tabanlı bir kullanıcı arayüzü geliştirildi.
 - Kategorilere göre filtreleme, detay görüntüleme ve öneri sistemi bu arayüzde mevcuttur.
 
 ### 📱 Mobil Uygulama – Android (Kotlin)
